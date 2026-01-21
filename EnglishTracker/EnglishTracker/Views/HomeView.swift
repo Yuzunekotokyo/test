@@ -29,10 +29,16 @@ struct HomeView: View {
         }
     }
 
+    var totalPoints: Int {
+        records.reduce(0) { $0 + $1.pointsEarned }
+    }
+
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 24) {
+                    catStretchCard
+
                     streakCard
 
                     studyInputCard
@@ -44,6 +50,12 @@ struct HomeView: View {
             .navigationTitle("EnglishTracker")
             .background(Color(.systemGroupedBackground))
         }
+    }
+
+    private var catStretchCard: some View {
+        CatStretchView(totalPoints: totalPoints)
+            .cornerRadius(16)
+            .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 2)
     }
 
     private var streakCard: some View {
