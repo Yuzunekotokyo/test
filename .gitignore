@@ -1,0 +1,6 @@
+# Separate repository - should not be tracked here
+EnglishTracker/
+
+# Temporary files
+*.zip
+*.tar.gz
