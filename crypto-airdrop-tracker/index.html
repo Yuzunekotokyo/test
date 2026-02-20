@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Perp DEX Airdrop Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Perp DEX Airdrop Tracker</h1>
+            <p class="subtitle">チェーン別 Perpetual DEX エアドロップ情報ダッシュボード</p>
+        </div>
+        <div class="header-actions">
+            <button id="refreshTweets" class="btn btn-primary" title="X APIからツイートを取得">
+                <span class="icon">&#x1D54F;</span> ツイート取得
+            </button>
+            <button id="toggleSettings" class="btn btn-secondary" title="設定">
+                &#9881; 設定
+            </button>
+        </div>
+    </header>
+
+    <!-- Settings Panel -->
+    <div id="settingsPanel" class="settings-panel hidden">
+        <div class="settings-content">
+            <h3>X API 設定</h3>
+            <div class="form-group">
+                <label for="bearerToken">Bearer Token</label>
+                <input type="password" id="bearerToken" placeholder="X API Bearer Token を入力">
+            </div>
+            <div class="form-group">
+                <label for="proxyUrl">CORS Proxy URL (任意)</label>
+                <input type="text" id="proxyUrl" placeholder="https://your-proxy.example.com">
+                <small>ブラウザからX APIを直接呼ぶ場合はCORSプロキシが必要です</small>
+            </div>
+            <div class="form-actions">
+                <button id="saveSettings" class="btn btn-primary">保存</button>
+                <button id="cancelSettings" class="btn btn-secondary">キャンセル</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Summary -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-value" id="totalProtocols">0</span>
+            <span class="stat-label">プロトコル数</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="totalChains">0</span>
+            <span class="stat-label">チェーン数</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="highPotential">0</span>
+            <span class="stat-label">高期待度</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-value" id="lastUpdated">-</span>
+            <span class="stat-label">最終更新</span>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <div class="filter-group">
+            <label>チェーン:</label>
+            <div id="chainFilters" class="chain-filter-buttons">
+                <button class="chain-btn active" data-chain="all">全て</button>
+            </div>
+        </div>
+        <div class="filter-group">
+            <label>期待度:</label>
+            <select id="potentialFilter">
+                <option value="all">全て</option>
+                <option value="confirmed">確定</option>
+                <option value="very_high">非常に高い</option>
+                <option value="high">高い</option>
+                <option value="medium">中程度</option>
+                <option value="low">低い</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>トークン:</label>
+            <select id="tokenFilter">
+                <option value="all">全て</option>
+                <option value="no">未発行（狙い目）</option>
+                <option value="yes">発行済み</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>検索:</label>
+            <input type="text" id="searchInput" placeholder="プロトコル名で検索...">
+        </div>
+    </div>
+
+    <!-- Protocol Cards Grid -->
+    <main id="protocolGrid" class="protocol-grid">
+        <!-- Cards will be dynamically generated -->
+    </main>
+
+    <!-- Tweet Modal -->
+    <div id="tweetModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">ツイート</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <div class="loading">ツイートを読み込み中...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <footer>
+        <p>Perp DEX Airdrop Tracker | データソース: X (Twitter) |
+            <span class="disclaimer">投資アドバイスではありません。DYOR（自分で調査を）</span>
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
