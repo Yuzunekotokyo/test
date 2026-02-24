@@ -53,7 +53,7 @@
       "hasToken": false,
       "tokenName": "DIME",
       "airdropPotential": "confirmed",
-      "airdropStatus": "DIMEトークン確定。Genesis 20%（S1: 5%, S2: 15%）。コミュニティ総配分57.6%。S2進行中（毎週金曜4M XP配布）。TGE: 2026年H1予定",
+      "airdropStatus": "DIMEトークン確定。Genesis 25%（S1: 5%, S2: 20%）。コミュニティ総配分57.6%。S2完了。TGE: 2026年2-3月予定",
       "criteria": ["Position XP（取引）", "Fee XP（手数料）", "Vault XP（USDC預入）", "リファラル（10%XPボーナス）", "X/Discord連携（anti-sybil）"],
       "tvl": "$200M+",
       "twitter": ["@paradex"],
@@ -61,7 +61,7 @@
       "notes": "Tier1最優先。Paradigm（3,000+機関）支援。30日出来高$30B+。OI $600M+。S2は最大6ヶ月延長の可能性",
       "estimatedFdv": "$500M〜$1B",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$0.80〜$1.20/XP"
+      "pointValueEstimate": "~$0.36〜$0.71/XP"
     },
     {
       "id": "edgex",
