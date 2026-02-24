@@ -159,9 +159,9 @@
       "twitter": ["@pacifica_fi"],
       "xSearchQuery": "Pacifica airdrop OR token Solana perp DEX",
       "notes": "Tier1。累計$100B+。日次ピーク$624M。Anti-sybilシステムでwash trader事後スラッシュあり。招待制のため早期参加が重要",
-      "estimatedFdv": "$500M〜$1.5B",
+      "estimatedFdv": "$500M〜$3B",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$0.3〜$10/pt"
+      "pointValueEstimate": "~$0.30〜$1.09/pt"
     },
     {
       "id": "genius-terminal",
@@ -181,7 +181,7 @@
       "notes": "Tier2。HL/Asterで取引しながらGeniusポイントも二重取り可能。マルチ8桁投資（YZi Labs）",
       "estimatedFdv": "$300M〜$500M",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$0.15〜$0.75/GP"
+      "pointValueEstimate": "~$0.75〜$1.25/GP"
     },
     {
       "id": "ostium",
@@ -201,7 +201,7 @@
       "notes": "Tier2。$23.5M調達（Coinbase Ventures, Wintermute, Susquehanna）。Harvard出身チーム。RWA Perpの先駆者",
       "estimatedFdv": "$250M〜$1B",
       "fdvType": "estimate",
-      "pointValueEstimate": null
+      "pointValueEstimate": "~$2.86〜$7.14/pt"
     },
     {
       "id": "reya-network",
