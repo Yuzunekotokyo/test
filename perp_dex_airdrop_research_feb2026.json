@@ -1,0 +1,1191 @@
+{
+  "metadata": {
+    "title": "Perpetual DEX Airdrop Research - February 2026",
+    "last_updated": "2026-02-20",
+    "total_protocols_tracked": 32,
+    "market_overview": {
+      "perp_dex_volume_2025": "$8 trillion",
+      "perp_dex_cumulative_volume_2026": "$12+ trillion",
+      "dex_cex_ratio_growth": "6x increase in under 3 years",
+      "dex_market_share_of_derivatives": "26% by late 2025",
+      "sector_market_cap": "$18.9 billion (Aug 2025)",
+      "narrative": "2026 is widely considered the 'golden season' for Perp DEX airdrops. Competition has shifted from technology to incentives."
+    }
+  },
+
+  "protocols": [
+
+    {
+      "name": "Hyperliquid",
+      "ticker": "HYPE",
+      "chains": ["Hyperliquid L1 (custom chain)"],
+      "category": "Perpetual DEX / Spot / Prediction Markets",
+      "token_launched": true,
+      "airdrop_status": "completed_with_future_emissions",
+      "airdrop_likelihood": "confirmed_future_distributions",
+      "description": "The dominant perp DEX by market share. Custom L1 chain with sub-second execution. First airdrop in Nov 2024 was one of the largest in DeFi history. HIP-3 enabled permissionless perp markets; HIP-4 (Feb 2026) introduced native prediction markets and options.",
+      "key_metrics": {
+        "market_cap": "$6.26 billion",
+        "annualized_volume_2025": "$3.0 trillion",
+        "open_interest": "$9 billion (54% of all perp DEX OI)",
+        "market_share": "~32% (down from 73% peak in Q2 2025)",
+        "cumulative_volume": "$1.5+ trillion"
+      },
+      "airdrop_details": {
+        "genesis_airdrop": "Completed Nov 2024 - billions in value distributed",
+        "remaining_community_allocation": "42.88% of HYPE supply remaining (38.88% Future Emissions + 4% unclaimed)",
+        "estimated_remaining_value": "~$19 billion",
+        "how_to_earn": [
+          "Trade spot or leveraged perpetual futures",
+          "Focus on trading pairs with low open interest",
+          "Deposit liquidity into Hyperliquid Vaults",
+          "Stake HYPE tokens (up to 5% APY)",
+          "Activity on HyperEVM may also be rewarded"
+        ]
+      },
+      "funding": "Self-funded (no VC funding)",
+      "notable_events": [
+        "Ripple Prime integrated Hyperliquid on Feb 4, 2026 (first Wall Street-DeFi derivatives connection)",
+        "MetaMask integrated Hyperliquid for in-wallet perpetual trading"
+      ],
+      "twitter": "@HyperliquidX",
+      "website": "https://hyperliquid.xyz"
+    },
+
+    {
+      "name": "Lighter",
+      "ticker": "LIT",
+      "chains": ["Lighter L2 (custom Ethereum L2 with ZK circuits)", "Multi-chain support: Ethereum, Base, Arbitrum, Avalanche"],
+      "category": "Perpetual DEX",
+      "token_launched": true,
+      "airdrop_status": "completed_initial_with_ongoing",
+      "airdrop_likelihood": "confirmed",
+      "description": "High-performance on-chain perpetual futures exchange using custom zero-knowledge circuits. Zero-fee trading model. Was the biggest DEX by 30-day volume at peak. Emerged as the most aggressive competitor to Hyperliquid.",
+      "key_metrics": {
+        "30_day_volume": "Top 3 (behind Hyperliquid and Aster)",
+        "7_day_avg_volume": "$2.7 billion",
+        "peak_24h_volume": "$9.41 billion (Nov 2025)"
+      },
+      "airdrop_details": {
+        "tge": "Late 2025",
+        "airdrop_allocation": "25% via airdrop",
+        "total_supply": "1,000,000,000 LIT",
+        "points_system": "Lighter Points distributed weekly based on trading volume",
+        "otc_point_value": "~$50 per point",
+        "how_to_earn": [
+          "Trade actively (zero-fee model allows funding arbitrage)",
+          "Provide liquidity in low OI pairs",
+          "Deposit into User Pool for passive point earning",
+          "Multi-chain deposits supported"
+        ],
+        "vesting": "Team/investor: 1-year lockup + 3-year linear vesting; Ecosystem via points/airdrops"
+      },
+      "funding": "Backed by a16z, Lightspeed Venture Partners, Founders Fund",
+      "twitter": "@lighter_xyz",
+      "website": "https://lighter.xyz"
+    },
+
+    {
+      "name": "Paradex",
+      "ticker": "DIME",
+      "chains": ["Paradex Chain (Starknet appchain)"],
+      "category": "Perpetual DEX / Options / Spot",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "Zero-fee, privacy-focused DEX on Starknet incubated by Paradigm. Unified portfolio margin across spot, perps, and options. Supports 250+ markets. Privacy via zk-encrypted accounts.",
+      "key_metrics": {
+        "cumulative_volume": "$210+ billion",
+        "tvl": "~$200 million",
+        "open_interest": "$600+ million",
+        "30_day_volume": "$30.25 billion"
+      },
+      "airdrop_details": {
+        "token": "DIME",
+        "genesis_allocation": "20% of supply (5% Season 1, 15% Season 2)",
+        "community_total": "57.6% of supply",
+        "ongoing_community_rewards_post_airdrop": "26.6%",
+        "season_2_status": "Active - 4M XP distributed weekly (Fridays)",
+        "season_2_extension": "Extended by up to 6 months for DIME listing preparation",
+        "tge_expected": "H1 2026",
+        "how_to_earn": [
+          "Trade to earn Position XP, Fee XP, Liquidation XP",
+          "Deposit USDC into Vault for Vault XP",
+          "Referral program (10% of invitee's XP; invitees get 5% XP boost)",
+          "Link X/Discord for anti-sybil community XP boost"
+        ]
+      },
+      "funding": "Incubated by Paradigm (access to 3,000+ institutions)",
+      "twitter": "@paradex",
+      "website": "https://paradex.trade"
+    },
+
+    {
+      "name": "Pacifica",
+      "ticker": "TBD",
+      "chains": ["Solana"],
+      "category": "Perpetual DEX (AI-integrated)",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "Next-gen Perp DEX on Solana co-founded by Constance Wang (ex-FTX COO). Fully self-funded with no VC funding (Hyperliquid model). Hybrid architecture with off-chain matching + on-chain settlement (<20ms latency). Integrates AI trading agents.",
+      "key_metrics": {
+        "cumulative_volume": "$100+ billion (as of Jan 21, 2026)",
+        "daily_volume_peak": "$624 million",
+        "markets": "20 perpetual markets live",
+        "leverage": "5x to 50x"
+      },
+      "airdrop_details": {
+        "points_distribution": "10,000,000 points every Thursday",
+        "token_distribution_plan": "220 million tokens over 22 weeks (ending ~Feb 5, 2026)",
+        "estimated_token_value": "~$1.09 per unit (community estimate at 25% airdrop / $10B FDV)",
+        "anti_sybil": "Active anti-sybil system with retroactive point slashing for wash traders",
+        "access": "Invite-only closed beta",
+        "how_to_earn": [
+          "Trade perpetuals (points based on volume)",
+          "Participate in trading competitions",
+          "Get invite code from existing users or community giveaways"
+        ]
+      },
+      "funding": "Self-funded (no VC funding)",
+      "team": "Constance Wang (ex-FTX COO), Jose (ex-NFTperp), Tony (AsyncBlock)",
+      "twitter": "@pacifica_fi",
+      "website": "https://pacifica.fi"
+    },
+
+    {
+      "name": "edgeX",
+      "ticker": "TBD",
+      "chains": ["StarkEx ZK-Rollup (Ethereum L2)", "Transitioning to EDGE Chain (custom Ethereum L2)"],
+      "category": "Perpetual DEX / Spot",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "High-performance perp DEX incubated by Amber Group ($5B AUM). Processes 200,000 orders/sec with <10ms matching latency. Team from Morgan Stanley, Barclays, Goldman Sachs, Bybit.",
+      "key_metrics": {
+        "cumulative_volume": "$600+ billion",
+        "tvl": "$400+ million",
+        "open_interest": "$1+ billion",
+        "30_day_volume": "$91 billion (Rank #4)"
+      },
+      "airdrop_details": {
+        "community_allocation": "~20-35% of supply",
+        "pre_tge_season": "Launched Jan 7, 2026 - XP distributed weekly until TGE",
+        "tge_expected": "On or before March 31, 2026",
+        "memecoin_airdrop": "$MARU token - 70% allocation dedicated to airdrops",
+        "how_to_earn": [
+          "Spot trading (3x XP multiplier on volume)",
+          "Trade on mobile app (1.2x XP boost)",
+          "Hold MARU tokens (1.05x-1.15x XP multipliers)",
+          "Register as Messenger (1.05x-1.1x XP boost)",
+          "EpicSer NFT (guarantees airdrop allocation - requires Discord activity)"
+        ]
+      },
+      "funding": "Incubated by Amber Group (manages $50B AUM)",
+      "twitter": "@edgeX_exchange",
+      "website": "https://edgex.exchange"
+    },
+
+    {
+      "name": "GRVT",
+      "ticker": "GRVT",
+      "chains": ["zkSync Validium L2 (ZK Stack architecture, L3 appchain)"],
+      "category": "Hybrid Exchange (CEX UX + Self-custody)",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "Hybrid exchange combining CEX user experience with self-custody and privacy on zkSync Validium. L3 appchain optimized for high-performance perpetual trading with Ethereum-level security via ZK proofs.",
+      "key_metrics": {
+        "30_day_volume": "$35.68 billion (Rank #6)",
+        "total_funding": "$33.3 million"
+      },
+      "airdrop_details": {
+        "total_airdrop_allocation": "22% of total token supply",
+        "season_1_allocation": "10%",
+        "season_2_allocation": "12%",
+        "tge_target": "Q1 2026",
+        "points_distribution": "Every Tuesday",
+        "how_to_earn": [
+          "Trade perpetuals",
+          "Hold positions",
+          "Referral program",
+          "Liquidity provision"
+        ]
+      },
+      "funding": "Further Ventures, ZKsync, EigenCloud, 500 Global",
+      "twitter": "@grvt_io",
+      "website": "https://grvt.io"
+    },
+
+    {
+      "name": "Extended (formerly X10)",
+      "ticker": "TBD",
+      "chains": ["Starknet"],
+      "category": "Perpetual DEX / TradFi Perps",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "High-performance Perp DEX on Starknet with hybrid CLOB (off-chain matching <10ms, on-chain settlement). Supports 50+ markets including TradFi (EUR/USD, Gold, S&P 500, Brent Oil). Founded by ex-Revolut executives.",
+      "key_metrics": {
+        "tvl": "$200+ million (#1 Starknet app by TVL)",
+        "cumulative_volume": "$100+ billion",
+        "peak_daily_volume": "$2.6+ billion",
+        "30_day_volume": "$29.31 billion (Rank #8)",
+        "leverage": "Up to 100x"
+      },
+      "airdrop_details": {
+        "community_allocation": "30% of total supply",
+        "points_program": "1.2 million points distributed weekly (since April 30, 2025)",
+        "farming_period_end": "Suspected Q1 2026",
+        "tge_expected": "H1 2026",
+        "how_to_earn": [
+          "Trade spot tokens or leveraged perpetual futures",
+          "Deploy trading bots for delta-neutral strategies",
+          "Deploy stablecoins into Extended vaults for passive yield"
+        ]
+      },
+      "funding": "$6.5M from Tioga Capital, Semantic Ventures, Prelude, StarkWare, Cyber Fund",
+      "backing": "Revolut-backed",
+      "twitter": "@extendedapp",
+      "website": "https://extended.exchange"
+    },
+
+    {
+      "name": "Avantis",
+      "ticker": "AVNT",
+      "chains": ["Base"],
+      "category": "Perpetual DEX (RWA + Crypto)",
+      "token_launched": true,
+      "airdrop_status": "ongoing_distributions",
+      "airdrop_likelihood": "confirmed",
+      "description": "First perps DEX invested by Base. Zero-fee perpetual trading for RWAs and crypto with up to 500x leverage. Improved liquidity pool model over GMX/Synthetix.",
+      "key_metrics": {
+        "cumulative_volume": "$18+ billion",
+        "tvl": "$23 million",
+        "lps": "25,000+",
+        "total_supply": "1 billion AVNT"
+      },
+      "airdrop_details": {
+        "tge": "September 15, 2025",
+        "initial_airdrop": "12.5% (125M tokens) released at issuance",
+        "season_3": "Sep 3, 2025 - Feb 28, 2026 (4% allocation)",
+        "post_season_3_community": "34.5% remaining for community",
+        "community_incentives_total": "520 million AVNT reserved",
+        "vault_apy": "Up to 32% APY for passive farming",
+        "how_to_earn": [
+          "Trade perpetuals (zero fees on losing trades)",
+          "Deposit into Avantis vaults",
+          "Active on Base ecosystem"
+        ]
+      },
+      "funding": "$4M seed (Pantera, Founders Fund, Galaxy, Base Ecosystem Fund), $8M Series A (Pantera, Founders Fund, Salt Fund)",
+      "exchanges_listed": ["Coinbase", "Binance", "Upbit"],
+      "twitter": "@avaboratory",
+      "website": "https://avantisfi.com"
+    },
+
+    {
+      "name": "Ethereal",
+      "ticker": "TBD",
+      "chains": ["Ethereal Chain (L3 on Ethena Network / Arbitrum One / Celestia DA)"],
+      "category": "Perpetual DEX / Spot (USDe-native)",
+      "token_launched": false,
+      "airdrop_status": "likely_pre_tge",
+      "airdrop_likelihood": "likely",
+      "description": "Non-custodial spot and perpetual DEX built as L3 on Ethena Network. Uses USDe for margin trading. Margin accounts earn daily returns while holding positions. Custom sequencer targets sub-20ms execution.",
+      "key_metrics": {
+        "open_interest": "$45 million",
+        "daily_volume": "~$80 million",
+        "traders": "8,000",
+        "season_0_participants": "30,000+"
+      },
+      "airdrop_details": {
+        "ena_staker_allocation": "15% of Ethereal token allocated to ENA stakers",
+        "points_system": "Ethereal Points across seasons/epochs",
+        "season_0": "Active - deposit USDe to earn Ethereal Points + 30x Ethena rewards",
+        "how_to_earn": [
+          "Deposit USDe (earns eUSDe receipt tokens)",
+          "Use eUSDe in DeFi integrations for additional points",
+          "Stake ENA tokens",
+          "Trade on mainnet"
+        ]
+      },
+      "funding": "Backed by Ethena Labs ecosystem",
+      "twitter": "@etherealdex",
+      "website": "https://ethereal.trade"
+    },
+
+    {
+      "name": "Variational",
+      "ticker": "VAR",
+      "chains": ["Arbitrum"],
+      "category": "Perpetual DEX / Generalized Derivatives (RFQ model)",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "P2P trading protocol on Arbitrum using Request-for-Quote model. Flagship app Omni offers 500+ markets including exotics (volatility indices, RWAs, interest rate swaps, in-game items). Zero-fee model with unique Loss Rebate program (2-4% refund on losses).",
+      "key_metrics": {
+        "markets": "500+",
+        "fees": "Zero maker/taker (only 0.1 USDC deposit/withdraw)"
+      },
+      "airdrop_details": {
+        "community_allocation": "50% of VAR token supply",
+        "points_distribution": "Every Friday at 00:00 UTC",
+        "program_end": "Before end of Q3 2026",
+        "how_to_earn": [
+          "Trade on Omni platform",
+          "Cumulative trading volume is key metric",
+          "Benefit from Loss Rebate program",
+          "Previously in closed beta (referral code from Discord needed)"
+        ]
+      },
+      "funding": "$11.8M across 2 rounds - Coinbase Ventures, Dragonfly Capital, North Island Ventures, HackVC",
+      "twitter": "@variaboratory",
+      "website": "https://variational.io"
+    },
+
+    {
+      "name": "Ostium",
+      "ticker": "TBD",
+      "chains": ["Arbitrum (deposits from Arbitrum, Base, Solana)"],
+      "category": "Perpetual DEX (RWA-focused)",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "RWA-focused perp DEX on Arbitrum offering perpetual swaps on stocks, commodities, indices, forex, and crypto. Uses 'perpification' model - on-chain price exposure without tokenizing underlying assets. Up to 200x leverage.",
+      "key_metrics": {
+        "vault_apy": "~28% APR on OLP Vault"
+      },
+      "airdrop_details": {
+        "estimated_community_allocation": "~20% of token supply",
+        "season_2": "Started Jan 5, 2026 - 500,000 points per week",
+        "boost_windows": "Rolling week-long periods with incentivized asset groups",
+        "potential_value": "6-7 figures for early/highly active participants",
+        "how_to_earn": [
+          "Trade perps on RWAs/crypto",
+          "Deposit USDC into OLP Vault (~28% APR)",
+          "Participate during Boost Windows for extra rewards",
+          "Cross-chain deposits supported"
+        ]
+      },
+      "funding": "$23.5M from Coinbase Ventures, Wintermute Ventures, GSR, Susquehanna (SIG), Crucible Capital",
+      "team": "Harvard alumni: Kaledora Kiernan-Linn (CEO, ex-Bridgewater), Marco Antonio Ribeiro",
+      "twitter": "@OstiumLabs",
+      "website": "https://ostium.com"
+    },
+
+    {
+      "name": "Reya Network",
+      "ticker": "TBD",
+      "chains": ["Reya L2 (Arbitrum Orbit)", "Evolving to Ethereum L1 based rollup"],
+      "category": "Perpetual DEX / Spot / Staking / RWAs",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "First trading venue enshrined in Ethereum L1. Modular Ethereum-native stack with based rollup architecture, delegated sequencing, and ZK finality. Zero gas, MEV-proof, yield-bearing collateral (srUSD, wstETH).",
+      "key_metrics": {
+        "30_day_volume": "$14.62 billion (Rank #10)",
+        "community_allocation_remaining": "40%+ of token supply"
+      },
+      "airdrop_details": {
+        "airdrop_confirmed": true,
+        "active_points_program": true,
+        "how_to_earn": [
+          "Trade perpetuals on Reya",
+          "Provide liquidity",
+          "Use yield-bearing collateral"
+        ]
+      },
+      "twitter": "@reya_xyz",
+      "website": "https://reya.xyz"
+    },
+
+    {
+      "name": "Aster (formerly Astherus + APX Finance)",
+      "ticker": "ASTER",
+      "chains": ["BNB Chain", "Ethereum", "Solana", "Arbitrum", "Own L1 planned"],
+      "category": "Multi-chain Perpetual DEX",
+      "token_launched": true,
+      "airdrop_status": "ongoing_multi_stage",
+      "airdrop_likelihood": "confirmed",
+      "description": "Multi-chain perps DEX with dual trading modes (Simple/Pro). Supports hidden limit orders, 24/7 stock perpetuals alongside crypto. Up to 1001x leverage on select pairs. Emerged from 2024 merger of Astherus (yield) + APX Finance (perps).",
+      "key_metrics": {
+        "market_share": "~20% of global perp DEX market",
+        "total_supply": "8 billion ASTER",
+        "community_allocation": "53.5% (4.28B tokens)",
+        "locked_tokens": "~6.35 billion ASTER (~$700M worth awaiting unlock)"
+      },
+      "airdrop_details": {
+        "tge": "September 17, 2025 (via CMC Launch - 500%+ surge in 24h)",
+        "stage_4": "120M ASTER distributed; 50% immediate claim + 100% vested claim option",
+        "stage_5_crystal": "Dec 22, 2025 - Feb 1, 2026 (96M ASTER / 1.2% of supply)",
+        "ongoing_stages": "Multiple stages of community distribution",
+        "how_to_earn": [
+          "Trade perpetuals and spot",
+          "Use Simple or Pro mode",
+          "Participate in current active stage",
+          "'Machi Mode' - liquidated users receive point rewards"
+        ]
+      },
+      "funding": "Binance ecosystem (YZi Labs connection)",
+      "twitter": "@aboratory",
+      "website": "https://asterdex.com"
+    },
+
+    {
+      "name": "Genius Terminal",
+      "ticker": "GENIUS",
+      "chains": ["Multi-chain (EVM, Solana, Sui) - Routes through Hyperliquid & Aster"],
+      "category": "Perp/Spot DEX Trading Terminal",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "Multi-chain trading terminal backed by YZi Labs with CZ as advisor. Routes orders through Hyperliquid and Aster. Zero-fee, non-custodial, single-margin setup. Privacy-first with advanced privacy protocol coming late 2026.",
+      "key_metrics": {
+        "backing": "YZi Labs (CZ's family office, ~$10B AUM)",
+        "investment": "Multi-8-figure strategic investment from YZi Labs"
+      },
+      "airdrop_details": {
+        "token_launch": "GENIUS token by April 12, 2026",
+        "season_1": "200M GP total, 10M GP distributed weekly until Apr 12, 2026",
+        "allocation_boost": "50% increased allocation + 50% increased point value",
+        "dual_farming": "Trade perps to earn points from both Hyperliquid/Aster AND Genius",
+        "point_rates": "1 GP per $100 spot volume, 1 GP per $1K perp volume",
+        "how_to_earn": [
+          "Trade spot (1 GP per $100 volume)",
+          "Trade perpetuals (1 GP per $1,000 volume)",
+          "Dual-farm with Hyperliquid or Aster simultaneously",
+          "Zero fees currently"
+        ]
+      },
+      "funding": "YZi Labs (multi-8-figure investment), CZ as advisor",
+      "twitter": "@genius_terminal",
+      "website": "https://genius.trade"
+    },
+
+    {
+      "name": "Nado",
+      "ticker": "INK (converting points to INK tokens)",
+      "chains": ["Ink L2 (Kraken's Ethereum L2)"],
+      "category": "CLOB DEX (Spot + Perps + Money Markets)",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "Full-featured CLOB DEX on Ink (Kraken's L2). Built by former Kraken team. Orderbook-based with 5-15ms latency. Unified margin account for spot, perps, and currency markets. Open Beta Season 1 active.",
+      "key_metrics": {
+        "open_interest": "~$90 million",
+        "daily_volume": "~$500 million",
+        "daily_traders": "~2,000"
+      },
+      "airdrop_details": {
+        "token": "Points convert to $INK tokens",
+        "ink_airdrop_confirmed": true,
+        "nft_collection": "Templars of the Storm (floor: 0.45 ETH / ~$1,200)",
+        "open_beta_season_1": "Active - weekly distributions for trading, NLP, referrals",
+        "how_to_earn": [
+          "Trade on the platform during Open Beta",
+          "Participate in NLP (Nado Liquidity Provision)",
+          "Referral program",
+          "Hold Templars of the Storm NFT"
+        ]
+      },
+      "funding": "Built by ex-Kraken team; backed by Kraken ecosystem",
+      "twitter": "@naboratory",
+      "website": "https://nado.trade"
+    },
+
+    {
+      "name": "Perpl",
+      "ticker": "TBD",
+      "chains": ["Monad"],
+      "category": "Perpetual DEX (CLOB on-chain)",
+      "token_launched": false,
+      "airdrop_status": "possible_pre_launch",
+      "airdrop_likelihood": "likely",
+      "description": "Fully on-chain perp DEX on Monad with Central Limit Order Book architecture. Leverages Monad's 10,000 TPS, 500ms block times, and near-zero gas fees. Team relocated from US to London for regulatory clarity.",
+      "key_metrics": {
+        "funding_raised": "$9.25 million"
+      },
+      "airdrop_details": {
+        "status": "Pre-launch / testnet phase",
+        "how_to_earn": [
+          "Participate in testnet when available",
+          "Engage with community on Discord",
+          "Monitor for points program launch"
+        ]
+      },
+      "funding": "$9.25M from Dragonfly, Ergonia, Brevan Howard, Breed, L1D, CMS",
+      "partnership": "Partnership with Agora (AUSD stablecoin - backed by Paradigm/Dragonfly)",
+      "twitter": "@peraboratory",
+      "website": "https://perpl.xyz"
+    },
+
+    {
+      "name": "RISEx",
+      "ticker": "RISE (native chain token)",
+      "chains": ["Rise Chain (Ethereum L2)"],
+      "category": "Perpetual DEX (fully on-chain orderbook)",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "Flagship perp DEX on Rise Chain (high-performance Ethereum L2). Fully on-chain orderbook with sub-3ms execution. Acquired BSX Labs (perp DEX on Base). Gas-sponsored trading via RISE Wallet.",
+      "key_metrics": {
+        "execution_speed": "Sub-3ms"
+      },
+      "airdrop_details": {
+        "bsx_holder_allocation": "1.5% of RISE token supply for BSX token holders",
+        "status": "Public testnet active; closed mainnet this quarter; public launch early 2026",
+        "how_to_earn": [
+          "Trade on public testnet at testnet.rise.trade",
+          "Join waitlist for early mainnet access",
+          "Participate in testnet trading competitions",
+          "Hold BSX tokens for guaranteed allocation",
+          "Make daily transactions for points"
+        ]
+      },
+      "funding": "$7M from Vitalik Buterin, Galaxy; BSX Labs funded by Base and Blockchain Capital",
+      "twitter": "@RISEx_trade",
+      "website": "https://rise.trade"
+    },
+
+    {
+      "name": "SynFutures",
+      "ticker": "F",
+      "chains": ["Blast (V3)", "Multi-chain expansion planned"],
+      "category": "Perpetual DEX (Orderbook AMM hybrid)",
+      "token_launched": true,
+      "airdrop_status": "season_2_active",
+      "airdrop_likelihood": "confirmed",
+      "description": "Pioneering perp DEX with first-ever unified AMM and on-chain orderbook model (oAMM). Won Blast Big Bang competition. Expanding into stocks, indices, and RWA perps in 2026. Builder Program enables third parties to launch perp DEXs.",
+      "key_metrics": {
+        "cumulative_volume_on_blast": "$100+ billion",
+        "blast_market_share": "83% of Blast perp volume (Q1 peak)",
+        "weekly_volume_peak": "$7-8 billion"
+      },
+      "airdrop_details": {
+        "token": "$F",
+        "season_2": "Active alongside mainnet launch",
+        "oyster_odyssey": "Original points program for Blast airdrop qualification",
+        "how_to_earn": [
+          "Bridge assets to SynFutures",
+          "Open perpetual positions",
+          "Provide liquidity in key markets",
+          "Trade and earn points/mystery boxes"
+        ]
+      },
+      "funding": "Pantera Capital, Polychain Capital, Susquehanna (SIG), Dragonfly Capital, Standard Crypto, Framework Ventures",
+      "roadmap_2026": [
+        "Asset expansion (stocks, indices, RWAs)",
+        "Builder Program for third-party perp DEXs",
+        "Mobile app (Q3)",
+        "Governance upgrades (Q4)",
+        "Korea-first strategy"
+      ],
+      "twitter": "@SynFuturesDefi",
+      "website": "https://synfutures.com"
+    },
+
+    {
+      "name": "dYdX",
+      "ticker": "DYDX",
+      "chains": ["dYdX Chain (Cosmos AppChain)"],
+      "category": "Perpetual DEX / Margin Trading / Spot",
+      "token_launched": true,
+      "airdrop_status": "completed",
+      "airdrop_likelihood": "unlikely_new_airdrop",
+      "description": "Pioneer perp DEX now running as Cosmos AppChain (v4). Decentralized in-memory orderbook with off-chain matching and on-chain settlement. 220+ crypto markets. Original airdrop in 2021 was worth $800M.",
+      "key_metrics": {
+        "lifetime_volume": "$1.5 trillion",
+        "open_interest": "$200 million",
+        "tvl": "$12 million (MegaVault)",
+        "circulating_supply": "824.6M / 1B total DYDX",
+        "unlocked_percentage": "82.46%"
+      },
+      "airdrop_details": {
+        "original_airdrop": "Completed 2021 - 7.5% of supply ($800M value) to early users",
+        "total_community_distribution": "50% of 1B tokens",
+        "remaining_unlocks": "~17.5% still vesting (treasury releases)",
+        "next_unlock": "March 1, 2026 (Community Treasury + Rewards Treasury)",
+        "current_incentives": "Affiliate Booster Programs ($210K pools), trading rewards"
+      },
+      "twitter": "@dYdX",
+      "website": "https://dydx.exchange"
+    },
+
+    {
+      "name": "Vertex Protocol",
+      "ticker": "VRTX",
+      "chains": ["Arbitrum"],
+      "category": "All-in-One DEX (Spot + Perps + Money Markets)",
+      "token_launched": true,
+      "airdrop_status": "completed_with_staking_rewards",
+      "airdrop_likelihood": "unlikely_new_airdrop",
+      "description": "All-in-one DEX on Arbitrum with hybrid orderbook-AMM model. Vertically integrated spot, perps, and money markets. Revenue sharing via USDC for VRTX stakers.",
+      "key_metrics": {
+        "cumulative_volume": "$26+ billion"
+      },
+      "airdrop_details": {
+        "token": "VRTX (live)",
+        "staking_rewards": "Revenue sharing in USDC",
+        "how_to_earn": [
+          "Stake VRTX for revenue sharing",
+          "Trade on platform for additional rewards"
+        ]
+      },
+      "twitter": "@vertex_protocol",
+      "website": "https://vertexprotocol.com"
+    },
+
+    {
+      "name": "GMX",
+      "ticker": "GMX",
+      "chains": ["Arbitrum", "Solana"],
+      "category": "Perpetual DEX (Liquidity Pool model)",
+      "token_launched": true,
+      "airdrop_status": "no_airdrop_planned",
+      "airdrop_likelihood": "unlikely",
+      "description": "Pioneer decentralized perpetual exchange. V2 architecture uses GLV and GM pools. Expanded from Arbitrum to Solana. Received largest Arbitrum incentive grant (12M ARB).",
+      "key_metrics": {
+        "market_cap": "$102.96 million",
+        "tvl": "$450.27 million",
+        "cumulative_volume": "~$300 billion since 2021",
+        "fees_generated": "$100-200 million over two years"
+      },
+      "airdrop_details": {
+        "status": "Token already live; no new airdrop planned",
+        "earning_mechanism": "Provide liquidity in GMX V2 pools for yield"
+      },
+      "twitter": "@GMX_IO",
+      "website": "https://gmx.io"
+    },
+
+    {
+      "name": "ApeX Protocol",
+      "ticker": "APEX",
+      "chains": ["zkLink Nova L3", "Ethereum", "BNB Chain", "Arbitrum", "Base", "Mantle", "Solana"],
+      "category": "Multi-chain Perpetual DEX / Spot / RWAs / Prediction Markets",
+      "token_launched": true,
+      "airdrop_status": "ongoing_distributions",
+      "airdrop_likelihood": "confirmed",
+      "description": "Multi-chain perp DEX incubated by Davion Labs (supported by Bybit). Built on zkLink Nova for cross-chain liquidity. Supports crypto perps, spot, RWAs, and prediction markets. Active token buyback program ($9.6M bought back).",
+      "key_metrics": {
+        "token_price": "$2.57",
+        "fdv": "~$1.3 billion",
+        "buyback_total": "$9.625 million",
+        "markets": "Crypto perps, spot, RWAs, prediction markets"
+      },
+      "airdrop_details": {
+        "xp_program": "25M APEX from 175M Treasury Plan",
+        "staking_v4_5": "Weekly rewards in APEX-USDT LP tokens (unlocks until April 2026)",
+        "how_to_earn": [
+          "Trade perpetuals (volume-based)",
+          "Deposit via Mantle network",
+          "Stake APEX tokens",
+          "Maintain account balances",
+          "Referral program (up to 1.5x multipliers)"
+        ]
+      },
+      "funding": "Incubated by Davion Labs (Bybit); Dragonfly Capital",
+      "roadmap_2026": "ApeX Omni AppChain (dedicated settlement layer), advanced prediction markets",
+      "twitter": "@OfficialApeXdex",
+      "website": "https://apex.exchange"
+    },
+
+    {
+      "name": "Drift Protocol",
+      "ticker": "DRIFT",
+      "chains": ["Solana"],
+      "category": "Perpetual DEX (open-source)",
+      "token_launched": true,
+      "airdrop_status": "completed",
+      "airdrop_likelihood": "unlikely_new_airdrop",
+      "description": "Largest open-source perpetual futures exchange on Solana. V3 upgrade (late 2025) brought faster execution and deeper liquidity. Surpassed by Pacifica in daily volumes.",
+      "key_metrics": {
+        "cumulative_volume": "$24+ billion",
+        "tvl": "$300+ million",
+        "users": "180,000+"
+      },
+      "airdrop_details": {
+        "token": "DRIFT (live)",
+        "status": "Original airdrop completed; focus now on trading rewards"
+      },
+      "twitter": "@DriftProtocol",
+      "website": "https://drift.trade"
+    },
+
+    {
+      "name": "Jupiter Perps",
+      "ticker": "JUP",
+      "chains": ["Solana"],
+      "category": "DEX Aggregator / Perpetual DEX",
+      "token_launched": true,
+      "airdrop_status": "completed",
+      "airdrop_likelihood": "possible_ecosystem_airdrops",
+      "description": "Leading Solana DEX aggregator that also offers perpetual futures. Airdrop completed. Current focus on ecosystem expansion (Jupiter Lend, etc.).",
+      "key_metrics": {
+        "status": "Established Solana DeFi leader"
+      },
+      "airdrop_details": {
+        "status": "Main airdrop completed",
+        "ecosystem": "Jupiter Lend and other sub-protocols may have separate distributions"
+      },
+      "twitter": "@JupiterExchange",
+      "website": "https://jup.ag"
+    },
+
+    {
+      "name": "Ranger Finance",
+      "ticker": "TBD",
+      "chains": ["Solana"],
+      "category": "Perpetual DEX Aggregator",
+      "token_launched": false,
+      "airdrop_status": "possible_pre_tge",
+      "airdrop_likelihood": "possible",
+      "description": "Perpetual trading platform on Solana that aggregates liquidity from multiple DEXs. Users accumulate points through testnet usage, trading activity, and platform interaction.",
+      "airdrop_details": {
+        "how_to_earn": [
+          "Testnet participation",
+          "Trading activity",
+          "Platform interaction",
+          "Priority in both airdrop and token sale"
+        ]
+      },
+      "twitter": "@RangerFinance",
+      "website": "https://ranger.finance"
+    },
+
+    {
+      "name": "IVX (Levo)",
+      "ticker": "TBD",
+      "chains": ["Berachain"],
+      "category": "Derivatives DEX (Perps + Options)",
+      "token_launched": false,
+      "airdrop_status": "possible_pre_launch",
+      "airdrop_likelihood": "possible",
+      "description": "Decentralized derivatives platform on Berachain L1 with two product lines including Levo (CLOB for perpetuals). Features portfolio margining with unified accounts. Secured by Berachain's Proof-of-Liquidity.",
+      "airdrop_details": {
+        "testnet_status": "Active (Artio/Bartio testnets reward options trading users)",
+        "how_to_earn": [
+          "Trade on testnet (Artio/Bartio)",
+          "Options trading activity",
+          "Monitor for mainnet launch and points program"
+        ]
+      },
+      "funding": "Backed by Animoca, Avid3 Ventures",
+      "twitter": "@ivaboratory",
+      "website": "https://ivx.fi"
+    },
+
+    {
+      "name": "Kodiak",
+      "ticker": "TBD",
+      "chains": ["Berachain"],
+      "category": "Spot + Perpetual DEX",
+      "token_launched": false,
+      "airdrop_status": "possible",
+      "airdrop_likelihood": "possible",
+      "description": "Combined spot and perpetuals DEX on Berachain L1, integrating both into a single DeFi platform. Leverages Berachain's Proof-of-Liquidity consensus.",
+      "airdrop_details": {
+        "how_to_earn": [
+          "Participate in Berachain ecosystem",
+          "Trade on Kodiak when available",
+          "Monitor for points/incentive program"
+        ]
+      },
+      "twitter": "@KodiakFi",
+      "website": "https://kodiak.finance"
+    },
+
+    {
+      "name": "Astros",
+      "ticker": "TBD",
+      "chains": ["Sui"],
+      "category": "Perpetual DEX",
+      "token_launched": false,
+      "airdrop_status": "possible_pre_launch",
+      "airdrop_likelihood": "possible",
+      "description": "Native perpetual futures DEX on Sui. Integrates NAVI Protocol's lending pools for enhanced capital efficiency, creating a self-sustaining trading-lending ecosystem.",
+      "airdrop_details": {
+        "how_to_earn": [
+          "Trade on Astros platform",
+          "Provide liquidity",
+          "Engage with Sui ecosystem"
+        ]
+      },
+      "twitter": "@AstrosSui",
+      "website": "https://astros.xyz"
+    },
+
+    {
+      "name": "Decibel",
+      "ticker": "TBD",
+      "chains": ["Aptos"],
+      "category": "Perpetual DEX / Spot",
+      "token_launched": false,
+      "airdrop_status": "possible_pre_launch",
+      "airdrop_likelihood": "possible",
+      "description": "Fully on-chain trading engine natively built on Aptos. Currently in public testnet. Supports perpetual contracts, spot, and vault trading.",
+      "airdrop_details": {
+        "how_to_earn": [
+          "Trade on public testnet (app.decibel.trade)",
+          "Connect Aptos wallet and mint test USDC",
+          "Earn XP based on trading volume and ranking",
+          "Participate in trading arena"
+        ]
+      },
+      "twitter": "@DecibelTrade",
+      "website": "https://app.decibel.trade"
+    },
+
+    {
+      "name": "Levana",
+      "ticker": "LVN",
+      "chains": ["Sei", "Osmosis"],
+      "category": "Perpetual Swaps DEX",
+      "token_launched": true,
+      "airdrop_status": "completed",
+      "airdrop_likelihood": "unlikely_new_airdrop",
+      "description": "Perpetual swaps platform on Sei blockchain. Uses 'Well-Funded Perps Model' (V2). Leverages Sei's sub-400ms finality and parallelized EVM. Up to 30x leverage on BTC, ETH and other pairs.",
+      "key_metrics": {
+        "leverage": "Up to 30x"
+      },
+      "airdrop_details": {
+        "token": "LVN (live)",
+        "status": "Token already launched"
+      },
+      "twitter": "@Levana_protocol",
+      "website": "https://levana.finance"
+    },
+
+    {
+      "name": "MYX Finance",
+      "ticker": "TBD",
+      "chains": ["Linea", "BNB Chain"],
+      "category": "Perpetual DEX",
+      "token_launched": false,
+      "airdrop_status": "possible",
+      "airdrop_likelihood": "possible",
+      "description": "Cross-chain perp DEX on Linea and BNB Chain. Uses Matching Pool Mechanism (MPM) for zero-slippage trading. 125x capital efficiency. USDC-margined perpetual futures with up to 50x leverage.",
+      "key_metrics": {
+        "unique_addresses": "200,000+",
+        "leverage": "Up to 50x"
+      },
+      "airdrop_details": {
+        "how_to_earn": [
+          "Trade perpetuals on Linea or BNB Chain",
+          "Provide liquidity",
+          "Monitor for points program launch"
+        ]
+      },
+      "twitter": "@MYX_Finance",
+      "website": "https://myx.finance"
+    },
+
+    {
+      "name": "Synthetix Perps",
+      "ticker": "SNX",
+      "chains": ["Ethereum Mainnet", "Optimism", "Base"],
+      "category": "Perpetual DEX / Synthetic Assets",
+      "token_launched": true,
+      "airdrop_status": "no_new_airdrop",
+      "airdrop_likelihood": "unlikely",
+      "description": "Launching perpetual derivatives DEX on Ethereum mainnet using hybrid on-chain/off-chain order matching. First successful CLOB perp DEX on Ethereum mainnet. BTC/ETH/SOL derivatives with up to 50x leverage.",
+      "key_metrics": {
+        "status": "Ethereum mainnet perps DEX launched",
+        "leverage": "Up to 50x"
+      },
+      "airdrop_details": {
+        "token": "SNX (long established)",
+        "status": "No new airdrop - focus on protocol usage incentives"
+      },
+      "twitter": "@synthetix_io",
+      "website": "https://synthetix.io"
+    },
+
+    {
+      "name": "Liquid (Aggregator)",
+      "ticker": "TBD",
+      "chains": ["Multi-chain (aggregates Hyperliquid, Lighter, Ostium)"],
+      "category": "Perp DEX Aggregator",
+      "token_launched": false,
+      "airdrop_status": "possible",
+      "airdrop_likelihood": "possible",
+      "description": "Non-custodial perp DEX aggregator integrating Hyperliquid, Lighter, and Ostium into one interface. Manage all positions, yield, risk, and analytics in a single app.",
+      "airdrop_details": {
+        "how_to_earn": [
+          "Use the aggregator for trading",
+          "Monitor for points/incentive program"
+        ]
+      },
+      "twitter": "@LiquidDeFi",
+      "website": "https://liquid.trade"
+    },
+
+    {
+      "name": "Divergence",
+      "ticker": "DIVER",
+      "chains": ["TBD"],
+      "category": "Synthetic Binary Options / Volatility Trading",
+      "token_launched": false,
+      "airdrop_status": "possible",
+      "airdrop_likelihood": "possible",
+      "description": "DeFi protocol for synthetic binary options on volatile crypto assets. Trade volatility rather than price. Targeting Tier-1 exchange listings in 2026.",
+      "airdrop_details": {
+        "status": "Pre-launch; targeting Tier-1 listings in 2026"
+      },
+      "twitter": "@divergaboratory",
+      "website": "https://divergence.xyz"
+    }
+  ],
+
+  "chain_summary": {
+    "ethereum_arbitrum": {
+      "chain": "Ethereum / Arbitrum",
+      "protocols": [
+        {"name": "Lighter", "token": "LIT", "airdrop": "confirmed (TGE completed)"},
+        {"name": "Variational", "token": "VAR", "airdrop": "confirmed (50% community, Q3 2026)"},
+        {"name": "Ostium", "token": "TBD", "airdrop": "confirmed (~20% community)"},
+        {"name": "Reya Network", "token": "TBD", "airdrop": "confirmed (40%+ community)"},
+        {"name": "Vertex", "token": "VRTX", "airdrop": "completed"},
+        {"name": "GMX", "token": "GMX", "airdrop": "unlikely"},
+        {"name": "Ethereal", "token": "TBD", "airdrop": "likely (15% to ENA stakers)"},
+        {"name": "dYdX", "token": "DYDX", "airdrop": "completed (2021)"},
+        {"name": "Synthetix Perps", "token": "SNX", "airdrop": "unlikely"}
+      ]
+    },
+    "base": {
+      "chain": "Base",
+      "protocols": [
+        {"name": "Avantis", "token": "AVNT", "airdrop": "confirmed (34.5% community post-S3)"}
+      ]
+    },
+    "solana": {
+      "chain": "Solana",
+      "protocols": [
+        {"name": "Pacifica", "token": "TBD", "airdrop": "confirmed (self-funded, TGE ~Q1 2026)"},
+        {"name": "Drift Protocol", "token": "DRIFT", "airdrop": "completed"},
+        {"name": "Jupiter Perps", "token": "JUP", "airdrop": "completed"},
+        {"name": "Ranger Finance", "token": "TBD", "airdrop": "possible"}
+      ]
+    },
+    "sui": {
+      "chain": "Sui",
+      "protocols": [
+        {"name": "Astros", "token": "TBD", "airdrop": "possible (early stage)"}
+      ]
+    },
+    "aptos": {
+      "chain": "Aptos",
+      "protocols": [
+        {"name": "Decibel", "token": "TBD", "airdrop": "possible (public testnet active)"}
+      ]
+    },
+    "sei": {
+      "chain": "Sei",
+      "protocols": [
+        {"name": "Levana", "token": "LVN", "airdrop": "completed"}
+      ]
+    },
+    "zksync_era": {
+      "chain": "zkSync Era",
+      "protocols": [
+        {"name": "GRVT", "token": "GRVT", "airdrop": "confirmed (22% supply, TGE Q1 2026)"}
+      ]
+    },
+    "scroll": {
+      "chain": "Scroll",
+      "protocols": [
+        {"name": "No major dedicated perp DEX identified", "note": "Scroll ecosystem more focused on spot DEXs (e.g., SyncSwap). Cross-chain perp DEXs like Lighter support deposits from Scroll."}
+      ]
+    },
+    "monad": {
+      "chain": "Monad",
+      "protocols": [
+        {"name": "Perpl", "token": "TBD", "airdrop": "likely ($9.25M raised from Dragonfly)"}
+      ]
+    },
+    "berachain": {
+      "chain": "Berachain",
+      "protocols": [
+        {"name": "IVX (Levo)", "token": "TBD", "airdrop": "possible (testnet active)"},
+        {"name": "Kodiak", "token": "TBD", "airdrop": "possible"}
+      ]
+    },
+    "blast": {
+      "chain": "Blast",
+      "protocols": [
+        {"name": "SynFutures", "token": "F", "airdrop": "confirmed (Season 2 active)"}
+      ]
+    },
+    "linea": {
+      "chain": "Linea",
+      "protocols": [
+        {"name": "MYX Finance", "token": "TBD", "airdrop": "possible"},
+        {"name": "Note: Linea itself expected to airdrop (points -> tokens)", "note": "Perp DEX activity on Linea may contribute to Linea network airdrop eligibility"}
+      ]
+    },
+    "starknet": {
+      "chain": "Starknet",
+      "protocols": [
+        {"name": "Paradex", "token": "DIME", "airdrop": "confirmed (20% genesis, 57.6% total community)"},
+        {"name": "Extended", "token": "TBD", "airdrop": "confirmed (30% community, TGE H1 2026)"},
+        {"name": "edgeX", "token": "TBD", "airdrop": "confirmed (TGE by Mar 31, 2026)"}
+      ],
+      "note": "StarkWare technology powers ~16% of total perp DEX volume (Paradex, Extended, edgeX)"
+    },
+    "multi_chain": {
+      "chain": "Multi-chain",
+      "protocols": [
+        {"name": "Aster", "token": "ASTER", "airdrop": "confirmed (53.5% community, multi-stage ongoing)"},
+        {"name": "ApeX Protocol", "token": "APEX", "airdrop": "confirmed (ongoing distributions)"},
+        {"name": "Genius Terminal", "token": "GENIUS", "airdrop": "confirmed (TGE by Apr 12, 2026)"},
+        {"name": "Lighter", "token": "LIT", "airdrop": "confirmed (multi-chain support)"},
+        {"name": "Liquid", "token": "TBD", "airdrop": "possible (aggregator)"}
+      ]
+    },
+    "ink_kraken_l2": {
+      "chain": "Ink (Kraken L2)",
+      "protocols": [
+        {"name": "Nado", "token": "INK", "airdrop": "confirmed (points -> INK tokens)"}
+      ]
+    },
+    "rise_chain": {
+      "chain": "Rise Chain (Ethereum L2)",
+      "protocols": [
+        {"name": "RISEx", "token": "RISE", "airdrop": "confirmed (testnet active, BSX holders get 1.5%)"}
+      ]
+    }
+  },
+
+  "tier_ranking": {
+    "tier_1_highest_priority": {
+      "label": "Confirmed airdrops with large allocations, imminent TGEs",
+      "protocols": [
+        "Paradex (DIME) - 57.6% community, Season 2 active",
+        "GRVT - 22% airdrop, TGE Q1 2026",
+        "edgeX - Pre-TGE XP farming, TGE by Mar 31, 2026",
+        "Extended - 30% community, TGE H1 2026",
+        "Variational (VAR) - 50% community allocation",
+        "Pacifica - Self-funded, TGE ~Q1 2026"
+      ]
+    },
+    "tier_2_strong_opportunities": {
+      "label": "Confirmed airdrops, active farming, slightly further timeline",
+      "protocols": [
+        "Genius (GENIUS) - TGE by Apr 12, 2026, dual farming",
+        "Ostium - 20% community, Season 2 active",
+        "Reya Network - 40%+ community remaining",
+        "RISEx - Public testnet, BSX holder allocation",
+        "Nado (INK) - Open Beta Season 1",
+        "Ethereal - 15% to ENA stakers, points active"
+      ]
+    },
+    "tier_3_ongoing_distributions": {
+      "label": "Token launched but significant community allocation remaining",
+      "protocols": [
+        "Hyperliquid (HYPE) - 42.88% remaining (~$19B value)",
+        "Aster (ASTER) - 53.5% community, multi-stage ongoing",
+        "Avantis (AVNT) - 34.5% community post-S3",
+        "ApeX (APEX) - Ongoing XP program + buybacks",
+        "SynFutures (F) - Season 2 active"
+      ]
+    },
+    "tier_4_early_stage_possible": {
+      "label": "Pre-launch or early stage with possible airdrops",
+      "protocols": [
+        "Perpl (Monad) - $9.25M raised, pre-launch",
+        "IVX/Levo (Berachain) - Testnet active",
+        "Astros (Sui) - Early stage",
+        "Decibel (Aptos) - Public testnet",
+        "MYX Finance (Linea) - Possible",
+        "Ranger Finance (Solana) - Possible",
+        "Kodiak (Berachain) - Possible"
+      ]
+    }
+  },
+
+  "twitter_accounts_to_follow": {
+    "protocols": {
+      "Hyperliquid": "@HyperliquidX",
+      "Lighter": "@lighter_xyz",
+      "Paradex": "@paradex",
+      "Pacifica": "@pacifica_fi",
+      "edgeX": "@edgeX_exchange",
+      "GRVT": "@grvt_io",
+      "Extended": "@extendedapp",
+      "Avantis": "@avaboratory",
+      "Ethereal": "@etherealdex",
+      "Variational": "@variational_io",
+      "Ostium": "@OstiumLabs",
+      "Reya": "@reya_xyz",
+      "Aster": "@AsterDEX",
+      "Genius": "@genius_terminal",
+      "Nado": "@NadoDEX",
+      "Perpl": "@peraboratory",
+      "RISEx": "@RISEx_trade",
+      "SynFutures": "@SynFuturesDefi",
+      "dYdX": "@dYdX",
+      "Vertex": "@vertex_protocol",
+      "GMX": "@GMX_IO",
+      "ApeX": "@OfficialApeXdex",
+      "Drift": "@DriftProtocol",
+      "Jupiter": "@JupiterExchange"
+    },
+    "aggregators_and_tools": {
+      "PerpScope": "@PerpScope (perp DEX rankings & comparison)",
+      "LorisTools": "@LorisTools (farming aggregation/automation)",
+      "FundingViewApp": "@fundingviewapp (funding rate data)"
+    },
+    "alpha_researchers": {
+      "note": "Follow @prz_chojecki for perp DEX points calculators, @fiyalkin for perp DEX airdrop lists"
+    }
+  },
+
+  "key_strategies": {
+    "delta_neutral_trading": "Run price-neutral strategies to farm points without directional exposure",
+    "vault_deposits": "Deposit USDC into protocol vaults for passive points + 10-32% APY",
+    "funding_rate_arbitrage": "Exploit funding rate differences between platforms for low-risk volume",
+    "zero_fee_platforms": "Prioritize Lighter, Paradex, Avantis, Genius for zero-fee farming",
+    "dual_farming": "Use Genius Terminal to farm Hyperliquid/Aster + Genius simultaneously",
+    "self_funded_projects": "Prioritize Hyperliquid and Pacifica (no VC dilution = larger community share)",
+    "cross_chain_deposits": "Many platforms accept deposits from multiple chains (Ostium, Lighter, etc.)",
+    "anti_sybil_awareness": "Most platforms actively detect wash trading; focus on genuine trading activity"
+  },
+
+  "risks": {
+    "no_token_guarantee": "Some platforms may never issue tokens",
+    "liquidation_risk": "Leveraged trading carries significant loss potential",
+    "point_dilution": "As more farmers join, individual point value decreases",
+    "rug_pull_risk": "Always verify contracts and team legitimacy",
+    "ico_competition": "Under Trump's crypto-lenient admin, ICOs are making a comeback, potentially replacing some airdrops",
+    "token_unlock_pressure": "Protocols like Aster have $700M+ in locked tokens awaiting unlock"
+  },
+
+  "sources": [
+    "https://whales.market/blog/top-10-perp-dex-airdrops-in-2026/",
+    "https://www.techflowpost.com/en-US/article/30136",
+    "https://www.odaily.news/en/post/5209070",
+    "https://www.perpscope.com/",
+    "https://coinstats.app/blog/perp-dex-farming-for-crypto-traders-earn-your-first-100k-in-crypto-airdrops-in-2026/",
+    "https://airdrops.io/blog/perp-dex-tier-list-airdrop-2025/",
+    "https://airdrops.io/blog/the-ultimate-airdrop-tier-list-for-2026/",
+    "https://www.dlnews.com/articles/defi/five-upcoming-crypto-airdrops-to-watch-for-in-2026/",
+    "https://www.gate.com/learn/articles/2025-popular-perp-dex-overview-who-will-become-the-next-airdrop-goldmine/12924",
+    "https://oakresearch.io/en/analyses/fundamentals/ultimate-guide-farming-perp-dex-airdrop-2025",
+    "https://www.theblock.co/post/383120/2026-defi-outlook",
+    "https://www.coindesk.com/markets/2025/12/30/lighter-dex-launches-lit-token-with-25-airdrop/",
+    "https://phemex.com/academy/what-is-lighter-lit",
+    "https://blockworks.co/news/perpl-perpetuals-raise-funding-dragonfly-testnet",
+    "https://www.synfutures.com/",
+    "https://news.futunn.com/en/post/66919527/review-of-nine-perp-dex-projects-with-potential-airdrops-in",
+    "https://www.panewslab.com/en/articles/53ffd8eb-be6e-49a3-93eb-f0f19a4664c3",
+    "https://coinbureau.com/review/what-is-aster-crypto",
+    "https://www.coindesk.com/tech/2025/11/12/ethereum-layer-2-rise-unveils-risex-and-marketcore-to-build-global-on-chain-markets/",
+    "https://bitcoinethereumnews.com/tech/genius-perp-dex-unveils-airdrop-plans-and-points-whitepaper/",
+    "https://www.perpscope.com/dex/ethereal",
+    "https://reya.xyz/",
+    "https://whales.market/blog/how-to-get-ostium-airdrop/",
+    "https://airdrops.io/variational/",
+    "https://blog.sei.io/levana-launches-on-sei-bringing-high-leverage-trading-to-the-sei-ecosystem/"
+  ]
+}
