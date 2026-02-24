@@ -1,0 +1,3 @@
+# Perp DEX Airdrop Tracker - Python Dependencies
+# 標準ライブラリのみ使用のため外部依存なし
+# (urllib, json, argparse は全て標準ライブラリ)
