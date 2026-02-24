@@ -15,6 +15,7 @@ class AirdropTracker {
 
     async init() {
         await this.loadData();
+        this.computeFdvRanks();
         this.renderChainFilters();
         this.renderProtocols();
         this.updateStats();
@@ -33,6 +34,49 @@ class AirdropTracker {
             console.error('Failed to load protocol data:', err);
             this.showToast('データの読み込みに失敗しました', 'error');
         }
+    }
+
+    // === FDV Ranking ===
+    parseFdvToMillions(str) {
+        if (!str) return null;
+        const clean = str.replace(/[（(].*?[)）]/g, '').trim();
+        if (clean.includes('不明')) return null;
+
+        const parseOne = (s) => {
+            s = s.replace(/[~〜,]/g, '').replace(/\$/g, '').trim();
+            if (!s) return null;
+            const m = s.match(/([\d.]+)\s*(B|M|K)?/i);
+            if (!m) return null;
+            let val = parseFloat(m[1]);
+            const unit = (m[2] || 'M').toUpperCase();
+            if (unit === 'B') val *= 1000;
+            else if (unit === 'K') val /= 1000;
+            return val;
+        };
+
+        if (clean.includes('〜')) {
+            const parts = clean.split('〜');
+            const lo = parseOne(parts[0]);
+            const hi = parseOne(parts[1]);
+            if (lo !== null && hi !== null) return (lo + hi) / 2;
+            return lo || hi;
+        }
+        return parseOne(clean);
+    }
+
+    computeFdvRanks() {
+        const ranked = this.protocols
+            .map(p => ({ id: p.id, midpoint: this.parseFdvToMillions(p.estimatedFdv) }))
+            .filter(p => p.midpoint !== null && p.midpoint > 0)
+            .sort((a, b) => b.midpoint - a.midpoint);
+
+        const rankMap = {};
+        ranked.forEach((item, i) => { rankMap[item.id] = i + 1; });
+
+        this.protocols.forEach(p => {
+            p.fdvRank = rankMap[p.id] || null;
+        });
+        this.totalRanked = ranked.length;
     }
 
     // === Settings ===
@@ -147,6 +191,10 @@ class AirdropTracker {
             ${protocol.notes ? `<p class="card-description" style="font-style: italic; font-size: 0.8rem;">📝 ${protocol.notes}</p>` : ''}
             ${protocol.estimatedFdv ? `
             <div class="card-valuation">
+                ${protocol.fdvRank ? `
+                <div class="valuation-rank">
+                    <span class="rank-badge ${protocol.fdvRank <= 3 ? 'rank-top3' : protocol.fdvRank <= 10 ? 'rank-top10' : 'rank-other'}">#${protocol.fdvRank}</span>
+                </div>` : ''}
                 <div class="valuation-fdv">
                     <span class="valuation-label">FDV${protocol.fdvType === 'live' ? '' : '（予想）'}</span>
                     <span class="valuation-value fdv-${protocol.fdvType}">${protocol.estimatedFdv}</span>

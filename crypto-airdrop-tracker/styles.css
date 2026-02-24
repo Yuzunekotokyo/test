@@ -426,11 +426,49 @@ header {
 /* === Valuation Section === */
 .card-valuation {
     display: flex;
+    align-items: center;
     gap: 12px;
     margin-bottom: 12px;
     padding: 8px 12px;
     background: var(--bg-tertiary);
     border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+}
+
+.valuation-rank {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 28px;
+    padding: 0 6px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.rank-top3 {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #1a1a1a;
+    box-shadow: 0 0 8px rgba(246, 211, 101, 0.3);
+}
+
+.rank-top10 {
+    background: #58a6ff25;
+    color: var(--accent-blue);
+    border: 1px solid #58a6ff40;
+}
+
+.rank-other {
+    background: var(--bg-secondary);
+    color: var(--text-muted);
     border: 1px solid var(--border-color);
 }
 
