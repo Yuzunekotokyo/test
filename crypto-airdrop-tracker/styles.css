@@ -423,6 +423,59 @@ header {
     color: var(--text-secondary);
 }
 
+/* === Valuation Section === */
+.card-valuation {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+}
+
+.valuation-fdv,
+.valuation-point {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.valuation-point {
+    margin-left: auto;
+}
+
+.valuation-label {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.valuation-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.fdv-live {
+    color: var(--accent-green);
+}
+
+.fdv-estimate {
+    color: var(--accent-yellow);
+}
+
+.fdv-unknown {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.point-value {
+    color: var(--accent-cyan);
+    text-align: right;
+}
+
 .card-meta {
     display: flex;
     justify-content: space-between;

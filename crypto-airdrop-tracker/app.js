@@ -145,6 +145,18 @@ class AirdropTracker {
                 <div class="criteria-list">${criteriaHtml}</div>
             </div>
             ${protocol.notes ? `<p class="card-description" style="font-style: italic; font-size: 0.8rem;">📝 ${protocol.notes}</p>` : ''}
+            ${protocol.estimatedFdv ? `
+            <div class="card-valuation">
+                <div class="valuation-fdv">
+                    <span class="valuation-label">FDV${protocol.fdvType === 'live' ? '' : '（予想）'}</span>
+                    <span class="valuation-value fdv-${protocol.fdvType}">${protocol.estimatedFdv}</span>
+                </div>
+                ${protocol.pointValueEstimate ? `
+                <div class="valuation-point">
+                    <span class="valuation-label">1ptあたり</span>
+                    <span class="valuation-value point-value">${protocol.pointValueEstimate}</span>
+                </div>` : ''}
+            </div>` : ''}
             <div class="card-meta">
                 <span class="card-tvl">TVL: ${protocol.tvl || 'N/A'}</span>
                 <div class="card-twitter">${twitterLinks}</div>

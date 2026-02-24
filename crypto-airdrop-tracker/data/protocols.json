@@ -38,7 +38,10 @@
       "tvl": "$2B+",
       "twitter": ["@HyperliquidX"],
       "xSearchQuery": "Hyperliquid airdrop OR $HYPE season 2 OR future emissions",
-      "notes": "2026年2月Ripple Primeと統合。MetaMask連携。市場シェア〜32%（ピーク73%から低下）。自己資金プロジェクト（VC無し）"
+      "notes": "2026年2月Ripple Primeと統合。MetaMask連携。市場シェア〜32%（ピーク73%から低下）。自己資金プロジェクト（VC無し）",
+      "estimatedFdv": "$28B",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "paradex",
@@ -50,12 +53,15 @@
       "hasToken": false,
       "tokenName": "DIME",
       "airdropPotential": "confirmed",
-      "airdropStatus": "DIMEトークン確定。Genesis 20%（S1: 5%, S2: 15%）。コミュニティ総配分57.6%。S2進行中（毎週金曜4M XP配布）。TGE: 2026年H1予定",
+      "airdropStatus": "DIMEトークン確定。Genesis 25%（S1: 5%, S2: 20%）。コミュニティ総配分57.6%。S2完了。TGE: 2026年2-3月予定",
       "criteria": ["Position XP（取引）", "Fee XP（手数料）", "Vault XP（USDC預入）", "リファラル（10%XPボーナス）", "X/Discord連携（anti-sybil）"],
       "tvl": "$200M+",
       "twitter": ["@paradex"],
       "xSearchQuery": "Paradex airdrop OR DIME token OR Season 2 XP",
-      "notes": "Tier1最優先。Paradigm（3,000+機関）支援。30日出来高$30B+。OI $600M+。S2は最大6ヶ月延長の可能性"
+      "notes": "Tier1最優先。Paradigm（3,000+機関）支援。30日出来高$30B+。OI $600M+。S2は最大6ヶ月延長の可能性",
+      "estimatedFdv": "$500M〜$1B",
+      "fdvType": "estimate",
+      "pointValueEstimate": "~$0.36〜$0.71/XP"
     },
     {
       "id": "edgex",
@@ -72,7 +78,10 @@
       "tvl": "$400M+",
       "twitter": ["@edgeX_exchange"],
       "xSearchQuery": "edgeX airdrop OR token TGE OR MARU airdrop",
-      "notes": "Tier1。30日出来高$91B（#4）。Morgan Stanley/Barclays/Goldman出身チーム。TGE直近で最も緊急度が高い"
+      "notes": "Tier1。30日出来高$91B（#4）。Morgan Stanley/Barclays/Goldman出身チーム。TGE直近で最も緊急度が高い",
+      "estimatedFdv": "$1.5B〜$2.5B",
+      "fdvType": "estimate",
+      "pointValueEstimate": "~$30+/pt"
     },
     {
       "id": "grvt",
@@ -89,7 +98,10 @@
       "tvl": "$50M+",
       "twitter": ["@grvt_io"],
       "xSearchQuery": "GRVT airdrop OR token TGE Q1 2026",
-      "notes": "Tier1。30日出来高$35.68B（#6）。Further Ventures, ZKsync, 500 Global支援"
+      "notes": "Tier1。30日出来高$35.68B（#6）。Further Ventures, ZKsync, 500 Global支援",
+      "estimatedFdv": "$500M〜$1B",
+      "fdvType": "estimate",
+      "pointValueEstimate": null
     },
     {
       "id": "extended",
@@ -106,7 +118,10 @@
       "tvl": "$200M+",
       "twitter": ["@extendedapp"],
       "xSearchQuery": "Extended exchange airdrop OR X10 token TGE Starknet",
-      "notes": "Tier1。Starknet TVL #1。累計$100B+。30日出来高$29.31B（#8）。Revolut支援"
+      "notes": "Tier1。Starknet TVL #1。累計$100B+。30日出来高$29.31B（#8）。Revolut支援",
+      "estimatedFdv": "$300M〜$800M",
+      "fdvType": "estimate",
+      "pointValueEstimate": "~$1.75〜$4.65/pt"
     },
     {
       "id": "variational",
@@ -123,7 +138,10 @@
       "tvl": "N/A",
       "twitter": ["@variaboratory"],
       "xSearchQuery": "Variational airdrop OR VAR token Arbitrum perp",
-      "notes": "Tier1。50%配分は最大級。$11.8M調達（Coinbase Ventures, Dragonfly, HackVC）。500+エキゾチック市場が差別化要素"
+      "notes": "Tier1。50%配分は最大級。$11.8M調達（Coinbase Ventures, Dragonfly, HackVC）。500+エキゾチック市場が差別化要素",
+      "estimatedFdv": "$1.15B〜$1.85B",
+      "fdvType": "estimate",
+      "pointValueEstimate": "~$12〜$20/pt"
     },
     {
       "id": "pacifica",
@@ -140,7 +158,10 @@
       "tvl": "N/A",
       "twitter": ["@pacifica_fi"],
       "xSearchQuery": "Pacifica airdrop OR token Solana perp DEX",
-      "notes": "Tier1。累計$100B+。日次ピーク$624M。Anti-sybilシステムでwash trader事後スラッシュあり。招待制のため早期参加が重要"
+      "notes": "Tier1。累計$100B+。日次ピーク$624M。Anti-sybilシステムでwash trader事後スラッシュあり。招待制のため早期参加が重要",
+      "estimatedFdv": "$500M〜$3B",
+      "fdvType": "estimate",
+      "pointValueEstimate": "~$0.30〜$1.09/pt"
     },
     {
       "id": "genius-terminal",
@@ -157,7 +178,10 @@
       "tvl": "N/A",
       "twitter": ["@genius_terminal"],
       "xSearchQuery": "Genius Terminal airdrop OR GENIUS token TGE",
-      "notes": "Tier2。HL/Asterで取引しながらGeniusポイントも二重取り可能。マルチ8桁投資（YZi Labs）"
+      "notes": "Tier2。HL/Asterで取引しながらGeniusポイントも二重取り可能。マルチ8桁投資（YZi Labs）",
+      "estimatedFdv": "$300M〜$500M",
+      "fdvType": "estimate",
+      "pointValueEstimate": "~$0.75〜$1.25/GP"
     },
     {
       "id": "ostium",
@@ -174,7 +198,10 @@
       "tvl": "$30M+",
       "twitter": ["@OstiumLabs"],
       "xSearchQuery": "Ostium airdrop OR token perp RWA 2026",
-      "notes": "Tier2。$23.5M調達（Coinbase Ventures, Wintermute, Susquehanna）。Harvard出身チーム。RWA Perpの先駆者"
+      "notes": "Tier2。$23.5M調達（Coinbase Ventures, Wintermute, Susquehanna）。Harvard出身チーム。RWA Perpの先駆者",
+      "estimatedFdv": "$250M〜$1B",
+      "fdvType": "estimate",
+      "pointValueEstimate": "~$2.86〜$7.14/pt"
     },
     {
       "id": "reya-network",
@@ -191,7 +218,10 @@
       "tvl": "$50M+",
       "twitter": ["@reya_xyz"],
       "xSearchQuery": "Reya Network airdrop OR token 2026",
-      "notes": "Tier2。30日出来高$14.62B（#10）。40%+の大規模コミュニティ配分"
+      "notes": "Tier2。30日出来高$14.62B（#10）。40%+の大規模コミュニティ配分",
+      "estimatedFdv": "$500M〜$2B",
+      "fdvType": "estimate",
+      "pointValueEstimate": null
     },
     {
       "id": "ethereal",
@@ -208,7 +238,10 @@
       "tvl": "$10M+",
       "twitter": ["@etherealdex"],
       "xSearchQuery": "Ethereal DEX airdrop OR token Ethena USDe",
-      "notes": "Tier2。ENA保有者は自動的に15%配分対象。S0参加者30,000+。Ethenaエコシステム連携"
+      "notes": "Tier2。ENA保有者は自動的に15%配分対象。S0参加者30,000+。Ethenaエコシステム連携",
+      "estimatedFdv": "$300M〜$1B",
+      "fdvType": "estimate",
+      "pointValueEstimate": null
     },
     {
       "id": "nado",
@@ -225,7 +258,10 @@
       "tvl": "$20M+",
       "twitter": ["@naboratory"],
       "xSearchQuery": "Nado exchange airdrop OR INK token Kraken L2",
-      "notes": "Tier2。OI〜$90M。日次出来高〜$500M。NFTフロア0.45 ETH。Krakenエコシステム"
+      "notes": "Tier2。OI〜$90M。日次出来高〜$500M。NFTフロア0.45 ETH。Krakenエコシステム",
+      "estimatedFdv": "不明（Kraken L2）",
+      "fdvType": "unknown",
+      "pointValueEstimate": null
     },
     {
       "id": "risex",
@@ -242,7 +278,10 @@
       "tvl": "N/A",
       "twitter": ["@RISEx_trade"],
       "xSearchQuery": "RISEx airdrop OR RISE token Rise Chain",
-      "notes": "Tier2。$7M調達（Vitalik Buterin, Galaxy）。BSX Labs（Base, Blockchain Capital支援）統合"
+      "notes": "Tier2。$7M調達（Vitalik Buterin, Galaxy）。BSX Labs（Base, Blockchain Capital支援）統合",
+      "estimatedFdv": "~$200M（IDO評価額）",
+      "fdvType": "estimate",
+      "pointValueEstimate": null
     },
     {
       "id": "lighter",
@@ -259,7 +298,10 @@
       "tvl": "$100M+",
       "twitter": ["@lighter_xyz"],
       "xSearchQuery": "Lighter xyz airdrop OR $LIT token rewards points",
-      "notes": "a16z, Lightspeed, Founders Fund支援。OTCポイント価値〜$50。7日平均出来高$2.7B。トップ3 DEX"
+      "notes": "a16z, Lightspeed, Founders Fund支援。OTCポイント価値〜$50。7日平均出来高$2.7B。トップ3 DEX",
+      "estimatedFdv": "$1.46B",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "aster",
@@ -276,7 +318,10 @@
       "tvl": "$200M+",
       "twitter": ["@aboratory"],
       "xSearchQuery": "Aster DEX airdrop OR $ASTER token stage",
-      "notes": "Binanceエコシステム（YZi Labs）。〜$700M相当のロックトークンがアンロック待ち。CMCローンチで24h +500%"
+      "notes": "Binanceエコシステム（YZi Labs）。〜$700M相当のロックトークンがアンロック待ち。CMCローンチで24h +500%",
+      "estimatedFdv": "$5.56B",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "avantis",
@@ -293,7 +338,10 @@
       "tvl": "$23M",
       "twitter": ["@avaboratory"],
       "xSearchQuery": "Avantis airdrop OR $AVNT Base perp season",
-      "notes": "Pantera, Founders Fund, Galaxy, Base Ecosystem Fund支援。Coinbase/Binance/Upbit上場済み。34.5%残存は大きい"
+      "notes": "Pantera, Founders Fund, Galaxy, Base Ecosystem Fund支援。Coinbase/Binance/Upbit上場済み。34.5%残存は大きい",
+      "estimatedFdv": "$192M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "synfutures",
@@ -310,7 +358,10 @@
       "tvl": "$30M+",
       "twitter": ["@SynFuturesDefi"],
       "xSearchQuery": "SynFutures airdrop OR $F token season 2",
-      "notes": "Pantera, Polychain, Susquehanna, Dragonfly支援。2026年ロードマップ: 資産拡張、モバイルアプリ（Q3）、ガバナンス（Q4）"
+      "notes": "Pantera, Polychain, Susquehanna, Dragonfly支援。2026年ロードマップ: 資産拡張、モバイルアプリ（Q3）、ガバナンス（Q4）",
+      "estimatedFdv": "$63M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "perpl",
@@ -327,7 +378,10 @@
       "tvl": "N/A",
       "twitter": ["@peraboratory"],
       "xSearchQuery": "Perpl airdrop OR token Monad perp DEX",
-      "notes": "Tier4。$9.25M（Dragonfly, Brevan Howard, CMS）。Monad最注目Perp DEX"
+      "notes": "Tier4。$9.25M（Dragonfly, Brevan Howard, CMS）。Monad最注目Perp DEX",
+      "estimatedFdv": "不明（プレローンチ）",
+      "fdvType": "unknown",
+      "pointValueEstimate": null
     },
     {
       "id": "ivx-levo",
@@ -344,7 +398,10 @@
       "tvl": "N/A",
       "twitter": ["@ivaboratory"],
       "xSearchQuery": "IVX Levo airdrop OR Berachain perp derivatives",
-      "notes": "Tier4。Animoca, Avid3 Ventures支援。Berachain PoL連携"
+      "notes": "Tier4。Animoca, Avid3 Ventures支援。Berachain PoL連携",
+      "estimatedFdv": "不明（テストネット）",
+      "fdvType": "unknown",
+      "pointValueEstimate": null
     },
     {
       "id": "kodiak",
@@ -353,15 +410,18 @@
       "chains": ["berachain"],
       "website": "https://kodiak.finance",
       "description": "Berachain上のスポット+Perp統合DEX。Proof-of-Liquidityコンセンサスと連携。",
-      "hasToken": false,
-      "tokenName": null,
+      "hasToken": true,
+      "tokenName": "KDK",
       "airdropPotential": "high",
       "airdropStatus": "トークン未発行。Berachainエコシステム参加でエアドロ期待",
       "criteria": ["Berachainエコシステム参加", "Kodiak取引", "ポイント/インセンティブ監視"],
       "tvl": "N/A",
       "twitter": ["@KodiakFi"],
       "xSearchQuery": "Kodiak Finance airdrop OR Berachain perp",
-      "notes": "Tier4。BerachainのPoLとの統合が差別化"
+      "notes": "Tier4。BerachainのPoLとの統合が差別化",
+      "estimatedFdv": "$27M〜$37M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "astros",
@@ -378,7 +438,10 @@
       "tvl": "N/A",
       "twitter": ["@AstrosSui"],
       "xSearchQuery": "Astros Sui airdrop OR perp DEX",
-      "notes": "Tier4。NAVI Protocol統合がユニーク"
+      "notes": "Tier4。NAVI Protocol統合がユニーク",
+      "estimatedFdv": "不明（初期段階）",
+      "fdvType": "unknown",
+      "pointValueEstimate": null
     },
     {
       "id": "decibel",
@@ -395,7 +458,10 @@
       "tvl": "N/A",
       "twitter": ["@DecibelTrade"],
       "xSearchQuery": "Decibel Trade airdrop OR Aptos perp testnet",
-      "notes": "Tier4。Aptos上の新興Perp DEX"
+      "notes": "Tier4。Aptos上の新興Perp DEX",
+      "estimatedFdv": "不明（テストネット）",
+      "fdvType": "unknown",
+      "pointValueEstimate": null
     },
     {
       "id": "myx-finance",
@@ -404,15 +470,18 @@
       "chains": ["linea", "bnb"],
       "website": "https://myx.finance",
       "description": "Linea/BNB Chain上のPerp DEX。Matching Pool Mechanism（MPM）でゼロスリッページ取引。125倍の資本効率。最大50倍レバレッジ。",
-      "hasToken": false,
-      "tokenName": null,
+      "hasToken": true,
+      "tokenName": "MYX",
       "airdropPotential": "medium",
       "airdropStatus": "トークン未発行。20万+ユニークアドレス。Lineaネットワークエアドロップとの相乗効果の可能性",
       "criteria": ["Perp取引（Linea/BNB）", "流動性提供", "ポイントプログラム監視"],
       "tvl": "$10M+",
       "twitter": ["@MYX_Finance"],
       "xSearchQuery": "MYX Finance airdrop OR token Linea perp",
-      "notes": "Tier4。Lineaエアドロップとの二重取りの可能性"
+      "notes": "Tier4。Lineaエアドロップとの二重取りの可能性",
+      "estimatedFdv": "$614M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "ranger-finance",
@@ -421,15 +490,18 @@
       "chains": ["solana"],
       "website": "https://ranger.finance",
       "description": "Solana上のPerp DEXアグリゲーター。複数DEXの流動性を集約。テストネットでポイント蓄積可能。",
-      "hasToken": false,
-      "tokenName": null,
+      "hasToken": true,
+      "tokenName": "RNGR",
       "airdropPotential": "medium",
       "airdropStatus": "テストネット/メインネット利用でポイント蓄積中。エアドロ+トークンセール優先権",
       "criteria": ["テストネット参加", "取引活動", "プラットフォーム利用"],
       "tvl": "N/A",
       "twitter": ["@RangerFinance"],
       "xSearchQuery": "Ranger Finance airdrop OR Solana perp aggregator",
-      "notes": "Tier4。Perp DEXアグリゲーター分野"
+      "notes": "Tier4。Perp DEXアグリゲーター分野",
+      "estimatedFdv": "$11.2M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "apex-protocol",
@@ -446,7 +518,10 @@
       "tvl": "$50M+",
       "twitter": ["@OfficialApeXdex"],
       "xSearchQuery": "ApeX Protocol airdrop OR $APEX XP rewards",
-      "notes": "FDV〜$1.3B。2026年ロードマップ: ApeX Omni AppChain。Dragonfly支援"
+      "notes": "FDV〜$1.3B。2026年ロードマップ: ApeX Omni AppChain。Dragonfly支援",
+      "estimatedFdv": "$175M〜$200M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "dydx",
@@ -463,7 +538,10 @@
       "tvl": "$12M (MegaVault)",
       "twitter": ["@dYdX"],
       "xSearchQuery": "dYdX airdrop OR $DYDX rewards 2026",
-      "notes": "次回アンロック: 2026年3月1日。新規エアドロップの可能性は低い"
+      "notes": "次回アンロック: 2026年3月1日。新規エアドロップの可能性は低い",
+      "estimatedFdv": "$84M〜$132M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "vertex-protocol",
@@ -480,7 +558,10 @@
       "tvl": "$50M+",
       "twitter": ["@vertex_protocol"],
       "xSearchQuery": "Vertex Protocol rewards OR VRTX staking",
-      "notes": "累計$26B+。収益シェアモデル"
+      "notes": "累計$26B+。収益シェアモデル",
+      "estimatedFdv": "~$0（Ink移行中）",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "gmx",
@@ -497,7 +578,10 @@
       "tvl": "$450M",
       "twitter": ["@GMX_IO"],
       "xSearchQuery": "GMX rewards OR V2 yield",
-      "notes": "DeFi Perp DEXの代表格。手数料収入$100-200M"
+      "notes": "DeFi Perp DEXの代表格。手数料収入$100-200M",
+      "estimatedFdv": "$64M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "drift-protocol",
@@ -514,7 +598,10 @@
       "tvl": "$300M+",
       "twitter": ["@DriftProtocol"],
       "xSearchQuery": "Drift Protocol rewards OR $DRIFT",
-      "notes": "Solana DeFi中核。Pacificaに日次出来高で追い抜かれた"
+      "notes": "Solana DeFi中核。Pacificaに日次出来高で追い抜かれた",
+      "estimatedFdv": "$80M〜$86M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "jupiter-perps",
@@ -531,7 +618,10 @@
       "tvl": "$500M+",
       "twitter": ["@JupiterExchange"],
       "xSearchQuery": "Jupiter airdrop OR $JUP ecosystem rewards",
-      "notes": "Solana DeFiリーダー"
+      "notes": "Solana DeFiリーダー",
+      "estimatedFdv": "$1.0B〜$1.1B",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "levana-perps",
@@ -548,7 +638,10 @@
       "tvl": "$10M+",
       "twitter": ["@Levana_protocol"],
       "xSearchQuery": "Levana Perps rewards OR $LVN Sei",
-      "notes": "Sei上の主要Perp DEX"
+      "notes": "Sei上の主要Perp DEX",
+      "estimatedFdv": "$1M〜$2M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     },
     {
       "id": "synthetix-perps",
@@ -565,7 +658,10 @@
       "tvl": "$300M+",
       "twitter": ["@synthetix_io"],
       "xSearchQuery": "Synthetix perps rewards OR SNX",
-      "notes": "Ethereumメインネット初の成功したCLOB Perp DEX"
+      "notes": "Ethereumメインネット初の成功したCLOB Perp DEX",
+      "estimatedFdv": "$134M〜$138M",
+      "fdvType": "live",
+      "pointValueEstimate": null
     }
   ]
 }
