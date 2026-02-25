@@ -2,7 +2,7 @@
   "metadata": {
     "title": "Perpetual DEX Airdrop Research - February 2026",
     "last_updated": "2026-02-20",
-    "total_protocols_tracked": 32,
+    "total_protocols_tracked": 40,
     "market_overview": {
       "perp_dex_volume_2025": "$8 trillion",
       "perp_dex_cumulative_volume_2026": "$12+ trillion",
@@ -935,6 +935,307 @@
       },
       "twitter": "@divergaboratory",
       "website": "https://divergence.xyz"
+    },
+
+    {
+      "name": "Aevo",
+      "ticker": "AEVO",
+      "chains": ["Aevo L2 (OP Stack custom Ethereum rollup)"],
+      "category": "Perpetual DEX / Options / Pre-launch Trading",
+      "token_launched": true,
+      "airdrop_status": "completed_with_ongoing_rewards",
+      "airdrop_likelihood": "medium",
+      "description": "Ribbon Financeから進化した分散型デリバティブ取引所。OP Stack L2ロールアップでオプション・Perp・プレローンチトークン取引。オフチェーンオーダーブック+オンチェーン決済。5,000+ TPS。累計$30B+取引量。",
+      "key_metrics": {
+        "market_cap": "$21M〜$86M",
+        "fdv": "$23M〜$94M",
+        "tvl": "$22.25M",
+        "token_price": "$0.02〜$0.05",
+        "supply": "916M/1B circulating (91.6% unlocked)",
+        "twitter_followers": "~122K"
+      },
+      "airdrop_details": {
+        "initial_airdrop": "Completed March 2024 (3% of supply)",
+        "ongoing_rewards": "Trading Epoch rewards (1M AEVO per epoch) + Partner token airdrops for pre-launch market stakers",
+        "staking_tiers": "Silver/Gold/Platinum/Diamond with up to 5x boost",
+        "how_to_earn": [
+          "Stake AEVO (minimum Silver tier)",
+          "Trade pre-launch markets for volume",
+          "Participate in Trading Epoch rankings"
+        ]
+      },
+      "funding": "Paradigm, Dragonfly, Coinbase Ventures, Binance Labs, Pantera, Nascent, Robot Ventures ($6M+ Series A)",
+      "notable_events": [
+        "Rebranded from Ribbon Finance (RBN→AEVO via governance vote RGP-33)",
+        "~70M AEVO bought back and burned via governance",
+        "91.6% unlocked - low sell pressure risk"
+      ],
+      "twitter": "@aevoxyz",
+      "website": "https://www.aevo.xyz"
+    },
+
+    {
+      "name": "Bluefin",
+      "ticker": "BLUE",
+      "chains": ["Sui"],
+      "category": "Perpetual DEX / Spot DEX",
+      "token_launched": true,
+      "airdrop_status": "completed_with_ongoing_rewards",
+      "airdrop_likelihood": "medium",
+      "description": "Suiブロックチェーン上の分散型スポット・デリバティブ取引プラットフォーム。オーダーブック型で最大20倍レバ。Sui上取引量No.1。累計$37B+取引量。57,754ユニークデポジター。",
+      "key_metrics": {
+        "market_cap": "$7M〜$11M",
+        "fdv": "$18M〜$24M",
+        "tvl": "$27.1M",
+        "token_price": "$0.02",
+        "supply": "394.66M/1B circulating (39.5%)",
+        "twitter_followers": "~172K"
+      },
+      "airdrop_details": {
+        "initial_airdrop": "Completed Dec 2024 TGE (19.68% of supply)",
+        "ongoing_rewards": "Trade & Earn (6% of supply for traders), weekly claims every Wednesday",
+        "how_to_earn": [
+          "Trade & Earn (volume-based BLUE points → 1:1 BLUE tokens)",
+          "Provide Stable Pool liquidity (SUI + BLUE rewards)",
+          "Provide Spot Liquidity",
+          "Referrals (10% referral rewards)"
+        ]
+      },
+      "funding": "Polychain Capital, SIG (Susquehanna), Brevan Howard Digital, Tower Research, Sui Group ($4.3M strategic)",
+      "notable_events": [
+        "Ember Protocol collaboration (Jan 2026)",
+        "SUI Group partnership with 2M SUI loan (Nov 2025)",
+        "DAO governance launch and mobile app planned for 2026",
+        "28% investor/contributor tokens unlocking linearly from Dec 2025"
+      ],
+      "twitter": "@bluefinapp",
+      "website": "https://bluefin.io"
+    },
+
+    {
+      "name": "Gains Network (gTrade)",
+      "ticker": "GNS",
+      "chains": ["Arbitrum", "Base", "Polygon", "ApeChain"],
+      "category": "Perpetual DEX / Synthetic Assets",
+      "token_launched": true,
+      "airdrop_status": "no_airdrop_fair_launch",
+      "airdrop_likelihood": "none",
+      "description": "280+市場（暗号資産・FX・株式・コモディティ）で最大1000倍レバの分散型Perp DEX。完全オンチェーン合成資産モデル。VCなしフェアローンチ。累計$75B+取引量。プロトコル収益100%がGNSバーン。",
+      "key_metrics": {
+        "market_cap": "$19M〜$22.5M",
+        "fdv": "$18M〜$30.5M",
+        "tvl": "$24.7M (Arb $19.63M, Base $3.17M, Polygon $1.08M, ApeChain $0.79M)",
+        "token_price": "$0.72〜$0.91",
+        "supply": "25.09M circulating (no max supply)",
+        "daily_revenue": "$130K (exceeds Uniswap's $95K)",
+        "daily_burn_rate": "1.54%",
+        "twitter_followers": "~61.5K"
+      },
+      "airdrop_details": {
+        "status": "No airdrop - Fair launch, no VC funding",
+        "yield_opportunity": "GNS staking for trading fee distribution (real yield)",
+        "how_to_earn": [
+          "Stake GNS for trading fee revenue share",
+          "Provide gDAI/gUSDC vault liquidity",
+          "Participate in trading competitions"
+        ]
+      },
+      "funding": "No VC funding (fair launch). Only $750K grant from Polygon",
+      "notable_events": [
+        "v10 launched Aug 2025 with improved liquidity and capital efficiency",
+        "Community approved $300K reallocation for v10 growth campaign",
+        "Casino/metaverse platform expansion planned"
+      ],
+      "twitter": "@GainsNetwork_io",
+      "website": "https://gains.trade"
+    },
+
+    {
+      "name": "Storm Trade",
+      "ticker": "STORM",
+      "chains": ["TON (The Open Network)"],
+      "category": "Perpetual DEX / SocialFi",
+      "token_launched": true,
+      "airdrop_status": "ongoing_seasonal_rewards",
+      "airdrop_likelihood": "medium",
+      "description": "TONブロックチェーン上のPerp DEX。Telegramディープインテグレーション。暗号資産・FX・株式・コモディティ最大500倍レバ。TON上デリバティブDEXでTVL最大。SocialFi要素あり。",
+      "key_metrics": {
+        "market_cap": "$1.6M",
+        "fdv": "$6.3M〜$7.8M",
+        "tvl": "$13M〜$33M",
+        "token_price": "$0.006",
+        "supply": "258M〜333M/1B circulating",
+        "twitter_followers": "~458K"
+      },
+      "airdrop_details": {
+        "mechanism": "Seasonal Reward Points (RP) program. RP → STORM conversion at end of each season",
+        "how_to_earn": [
+          "Trade ($100 volume = 10 RP)",
+          "Provide USDT/TON liquidity ($100/day = 5 RP)",
+          "Referrals (10 RP per invite, 25 RP for TG Premium users, 500 RP bonus if referral trades)",
+          "Complete Storm Academy educational modules",
+          "Stake STORM for 15% of protocol fees"
+        ]
+      },
+      "funding": "TON Foundation, TON Ventures, Cointelegraph Accelerator, Tonstarter, Sky9 Capital, Black Dragon, JRR Capital, Black Edge Capital, CSP DAO, Gotbit, Yolo Investments",
+      "notable_events": [
+        "STORM token launched Oct 16, 2024",
+        "30% of protocol fees go to buybacks (15% staking pool + 15% STON.fi LP)",
+        "Telegram in-app access for Web3 beginners"
+      ],
+      "twitter": "@storm_trade_ton",
+      "website": "https://storm.tg"
+    },
+
+    {
+      "name": "WOOFi (WOO Network)",
+      "ticker": "WOO",
+      "chains": ["Ethereum", "Arbitrum", "Optimism", "Base", "BNB Chain", "Polygon", "zkSync Era", "Polygon zkEVM", "Linea", "Avalanche", "and more (12+ chains)"],
+      "category": "Cross-chain DEX / Perpetual DEX / DeFi Hub",
+      "token_launched": true,
+      "airdrop_status": "no_airdrop_staking_rewards",
+      "airdrop_likelihood": "low",
+      "description": "12+チェーン展開のオールインワンDeFiアプリ。スワップ・ステーキング・イールド・Perp取引。CeFiとDeFi両方でユーティリティ。WOOFi ProはオンチェーンCLOB。Top 10 DEX by volume。",
+      "key_metrics": {
+        "market_cap": "$30M〜$33M",
+        "fdv": "$47.5M〜$84M",
+        "tvl": "$17.2M staked (29.24% of mcap)",
+        "token_price": "$0.015〜$0.018",
+        "supply": "~2.23B (burned from initial 3B)",
+        "twitter_followers": "~188K"
+      },
+      "airdrop_details": {
+        "status": "No airdrop. WOO staking distributes 80% of protocol fees",
+        "how_to_earn": [
+          "Stake WOO for 80% protocol fee distribution",
+          "Earn NFT Boosters (RPG-style) via cross-chain swaps, Earn Vault deposits, WOOFi Pro trading",
+          "Trade on WOOFi Pro for fee revenue sharing"
+        ]
+      },
+      "funding": "Binance Labs, Three Arrows Capital (defunct), Jump Crypto",
+      "notable_events": [
+        "CEX division (WOO X) sold to FusionX Digital (Nov 2025) - team now focuses on DeFi/AI",
+        "Token supply burned from 3B to 2.23B",
+        "ATH $1.78 → current ~$0.015 (-99%)"
+      ],
+      "twitter": "@_WOOFi",
+      "website": "https://fi.woo.org"
+    },
+
+    {
+      "name": "Orderly Network",
+      "ticker": "ORDER",
+      "chains": ["OP Stack L2 / Omnichain (Ethereum, BSC, Polygon, Arbitrum, Optimism, Avalanche + 17 chains)"],
+      "category": "Omnichain Liquidity Infrastructure / Perpetual DEX Infrastructure",
+      "token_launched": true,
+      "airdrop_status": "completed_with_staking_rewards",
+      "airdrop_likelihood": "low",
+      "description": "オムニチェーン流動性レイヤーL2。オーダーブック型低レイテンシ取引インフラ。「Perp DEXのShopify」。Orderly ONEで誰でもDEX構築可能。20+マーケットメーカー。Sub-200msレイテンシ。",
+      "key_metrics": {
+        "market_cap": "$19M〜$22M",
+        "fdv": "$52M〜$62M",
+        "token_price": "$0.05〜$0.06",
+        "supply": "369M/1B circulating (36.9%)",
+        "holders": "43,010",
+        "staking_apy": "~50%",
+        "twitter_followers": "~400K+"
+      },
+      "airdrop_details": {
+        "initial_airdrop": "Completed Aug 2024 TGE (13.3% retroactive, fully unlocked at launch)",
+        "ongoing_rewards": "VALOR/esORDER staking system - 60% of net trading fees distributed in USDC",
+        "how_to_earn": [
+          "Stake ORDER to accumulate VALOR (non-transferable metric)",
+          "Receive 60% of net trading fees in USDC weekly",
+          "30% of net fees used for ORDER buyback each epoch",
+          "Trade on Orderly-powered DEXs (REF Finance, WOOFi DEX, etc.)"
+        ]
+      },
+      "funding": "Pantera Capital, Dragonfly Capital, Sequoia China, Jump Crypto, Laser Digital, OKX Ventures",
+      "notable_events": [
+        "Orderly ONE launched Sep 2025 (no-code DEX builder)",
+        "VALOR/esORDER system migration Nov 2025",
+        "Monad partnership for enhanced DeFi",
+        "ATH $0.49 → current ~$0.05 (-88%)"
+      ],
+      "twitter": "@OrderlyNetwork",
+      "website": "https://orderly.network"
+    },
+
+    {
+      "name": "Backpack Exchange",
+      "ticker": "TBD",
+      "chains": ["Solana", "Ethereum", "Bitcoin"],
+      "category": "Hybrid Exchange / Perpetual DEX / Wallet",
+      "token_launched": false,
+      "airdrop_status": "confirmed_pre_tge",
+      "airdrop_likelihood": "confirmed",
+      "description": "Solana発ハイブリッド暗号資産取引所。セルフカストディウォレット・取引所・Mad Lads NFT統合。VASP（ドバイ）+MiFID II（EU）ライセンス。Perp取引が取引量94%。累計$400B+取引量。65万+KYCユーザー。",
+      "key_metrics": {
+        "estimated_valuation": "$1B+ (unicorn status)",
+        "cumulative_volume": "$400B+",
+        "kyc_users": "650,000+",
+        "aum": "$400M",
+        "perp_share_of_volume": "94%"
+      },
+      "airdrop_details": {
+        "tge_allocation": "25% of total supply at TGE (24% to Points participants, 1% to Mad Lads NFT holders)",
+        "tokenomics": "25% TGE → 37.5% pre-IPO release → 37.5% locked until 1yr post-IPO",
+        "current_phase": "Season 4 completed → Epilogue (final phase before TGE). Sybil removal + fair redistribution",
+        "how_to_earn": [
+          "Trade futures (94% of volume - likely highest weight)",
+          "Use lending/borrowing",
+          "Referral program",
+          "KYC required",
+          "Active engagement during Epilogue phase"
+        ]
+      },
+      "funding": "Placeholder VC, Jump Crypto, Multicoin Capital, Wintermute, Delphi Digital, Hashed ($37M+ equity raised)",
+      "notable_events": [
+        "Founded by ex-FTX/Alameda members",
+        "Acquired FTX EU for $32.7M for European expansion",
+        "First centralized crypto exchange to list SEC-registered equities natively on blockchain",
+        "Negotiating $50M raise at $1B+ valuation (Feb 2026)"
+      ],
+      "twitter": "@Backpack",
+      "website": "https://backpack.exchange"
+    },
+
+    {
+      "name": "Hotstuff",
+      "ticker": "TBD",
+      "chains": ["Hotstuff L1 (DeFi-native Layer 1)"],
+      "category": "DeFi Layer 1 / Perpetual DEX / Spot / Options",
+      "token_launched": false,
+      "airdrop_status": "possible_waitlist_active",
+      "airdrop_likelihood": "possible",
+      "description": "DeFi特化型L1ブロックチェーン。DracoBFTコンセンサスで75msブロック・150msファイナリティ・200K+ TPS。オンチェーンCLOBでPerp・スポット・オプションを1マージンアカウントで取引。ガスレス注文。バリデーターがフィアットゲートウェイとして機能。",
+      "key_metrics": {
+        "block_time": "75ms",
+        "finality": "150ms",
+        "tps": "200,000+",
+        "testnet_status": "Public testnet active (Dec 2025〜)",
+        "testnet_traction": "$500K liquidity from 1,000+ depositors in 12 hours"
+      },
+      "airdrop_details": {
+        "status": "No confirmed airdrop. Waitlist points program active",
+        "waitlist_points": "Follow @tradehotstuff (10pts), like announcement (10pts), join Discord (10pts), referrals (10pts/person)",
+        "how_to_earn": [
+          "Join waitlist and complete social tasks",
+          "Participate in public testnet (perp/spot trading with test funds)",
+          "Refer others to improve waitlist position",
+          "Early testnet activity likely rewarded"
+        ]
+      },
+      "funding": "Seed round (undisclosed amount) - Delphi Digital, Dialectic, Stake Capital, Tykhe Ventures, founders of 1inch, Safe, Biconomy, Socket",
+      "notable_events": [
+        "Originally founded as Syndr in 2021, rebranded to Hotstuff",
+        "Public testnet launched Dec 5, 2025",
+        "Singapore-based, co-founded by Vyom Sharma and Madhur Sharma",
+        "DracoBFT consensus derived from academic HotStuff protocol",
+        "Confidential Integrated Finance model - user activity stays private"
+      ],
+      "twitter": "@tradehotstuff",
+      "website": "https://www.hotstuff.trade"
     }
   ],
 
@@ -965,13 +1266,15 @@
         {"name": "Pacifica", "token": "TBD", "airdrop": "confirmed (self-funded, TGE ~Q1 2026)"},
         {"name": "Drift Protocol", "token": "DRIFT", "airdrop": "completed"},
         {"name": "Jupiter Perps", "token": "JUP", "airdrop": "completed"},
-        {"name": "Ranger Finance", "token": "TBD", "airdrop": "possible"}
+        {"name": "Ranger Finance", "token": "TBD", "airdrop": "possible"},
+        {"name": "Backpack Exchange", "token": "TBD", "airdrop": "confirmed (25% at TGE, Epilogue phase)"}
       ]
     },
     "sui": {
       "chain": "Sui",
       "protocols": [
-        {"name": "Astros", "token": "TBD", "airdrop": "possible (early stage)"}
+        {"name": "Astros", "token": "TBD", "airdrop": "possible (early stage)"},
+        {"name": "Bluefin", "token": "BLUE", "airdrop": "completed (ongoing Trade & Earn)"}
       ]
     },
     "aptos": {
@@ -1040,7 +1343,28 @@
         {"name": "ApeX Protocol", "token": "APEX", "airdrop": "confirmed (ongoing distributions)"},
         {"name": "Genius Terminal", "token": "GENIUS", "airdrop": "confirmed (TGE by Apr 12, 2026)"},
         {"name": "Lighter", "token": "LIT", "airdrop": "confirmed (multi-chain support)"},
-        {"name": "Liquid", "token": "TBD", "airdrop": "possible (aggregator)"}
+        {"name": "Liquid", "token": "TBD", "airdrop": "possible (aggregator)"},
+        {"name": "WOOFi", "token": "WOO", "airdrop": "no airdrop (80% fee staking rewards)"},
+        {"name": "Orderly Network", "token": "ORDER", "airdrop": "completed (VALOR staking rewards ongoing)"},
+        {"name": "Gains Network", "token": "GNS", "airdrop": "no airdrop (fair launch, staking rewards)"}
+      ]
+    },
+    "ton": {
+      "chain": "TON (The Open Network)",
+      "protocols": [
+        {"name": "Storm Trade", "token": "STORM", "airdrop": "ongoing (seasonal RP → STORM conversion)"}
+      ]
+    },
+    "hotstuff_l1": {
+      "chain": "Hotstuff L1",
+      "protocols": [
+        {"name": "Hotstuff", "token": "TBD", "airdrop": "possible (waitlist + testnet active)"}
+      ]
+    },
+    "aevo_l2": {
+      "chain": "Aevo L2 (OP Stack Ethereum rollup)",
+      "protocols": [
+        {"name": "Aevo", "token": "AEVO", "airdrop": "completed (ongoing Trading Epoch rewards)"}
       ]
     },
     "ink_kraken_l2": {
@@ -1066,7 +1390,8 @@
         "edgeX - Pre-TGE XP farming, TGE by Mar 31, 2026",
         "Extended - 30% community, TGE H1 2026",
         "Variational (VAR) - 50% community allocation",
-        "Pacifica - Self-funded, TGE ~Q1 2026"
+        "Pacifica - Self-funded, TGE ~Q1 2026",
+        "Backpack Exchange - 25% supply at TGE, Epilogue phase, $1B+ valuation"
       ]
     },
     "tier_2_strong_opportunities": {
@@ -1087,7 +1412,10 @@
         "Aster (ASTER) - 53.5% community, multi-stage ongoing",
         "Avantis (AVNT) - 34.5% community post-S3",
         "ApeX (APEX) - Ongoing XP program + buybacks",
-        "SynFutures (F) - Season 2 active"
+        "SynFutures (F) - Season 2 active",
+        "Bluefin (BLUE) - Trade & Earn ongoing, Sui flagship DEX",
+        "Storm Trade (STORM) - Seasonal RP program on TON",
+        "Aevo (AEVO) - Trading Epoch rewards + partner airdrops"
       ]
     },
     "tier_4_early_stage_possible": {
@@ -1099,7 +1427,16 @@
         "Decibel (Aptos) - Public testnet",
         "MYX Finance (Linea) - Possible",
         "Ranger Finance (Solana) - Possible",
-        "Kodiak (Berachain) - Possible"
+        "Kodiak (Berachain) - Possible",
+        "Hotstuff (Hotstuff L1) - Waitlist + testnet, Delphi Digital backed"
+      ]
+    },
+    "tier_5_yield_staking": {
+      "label": "Token launched, no new airdrop but attractive staking/yield opportunities",
+      "protocols": [
+        "Gains Network (GNS) - Fair launch, 100% burn model, daily $130K revenue",
+        "Orderly Network (ORDER) - 50% APY staking, 60% fees in USDC",
+        "WOOFi (WOO) - 80% protocol fees to stakers, 12+ chains"
       ]
     }
   },
@@ -1129,7 +1466,15 @@
       "GMX": "@GMX_IO",
       "ApeX": "@OfficialApeXdex",
       "Drift": "@DriftProtocol",
-      "Jupiter": "@JupiterExchange"
+      "Jupiter": "@JupiterExchange",
+      "Aevo": "@aevoxyz",
+      "Bluefin": "@bluefinapp",
+      "Gains Network": "@GainsNetwork_io",
+      "Storm Trade": "@storm_trade_ton",
+      "WOOFi": "@_WOOFi",
+      "Orderly Network": "@OrderlyNetwork",
+      "Backpack Exchange": "@Backpack",
+      "Hotstuff": "@tradehotstuff"
     },
     "aggregators_and_tools": {
       "PerpScope": "@PerpScope (perp DEX rankings & comparison)",
