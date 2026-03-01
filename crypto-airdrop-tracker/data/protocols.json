@@ -20,6 +20,10 @@
     { "id": "rise", "name": "Rise Chain", "color": "#ff6b6b" },
     { "id": "bnb", "name": "BNB Chain", "color": "#f0b90b" },
     { "id": "optimism", "name": "Optimism", "color": "#ff0420" },
+    { "id": "ton", "name": "TON", "color": "#0098ea" },
+    { "id": "polygon", "name": "Polygon", "color": "#8247e5" },
+    { "id": "apechain", "name": "ApeChain", "color": "#0046ff" },
+    { "id": "hotstuff", "name": "Hotstuff L1", "color": "#ff4500" },
     { "id": "multi", "name": "マルチチェーン", "color": "#8b949e" }
   ],
   "protocols": [
@@ -41,7 +45,8 @@
       "notes": "2026年2月Ripple Primeと統合。MetaMask連携。市場シェア〜32%（ピーク73%から低下）。自己資金プロジェクト（VC無し）",
       "estimatedFdv": "$28B",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ハイブリッド（Perp取引+スポット保有+HyperEVMエコシステム参加の総合評価。配分比率は非公開で毎週調整。S1は出来高ベースだったがS2以降は多要素化）"
     },
     {
       "id": "paradex",
@@ -61,7 +66,8 @@
       "notes": "Tier1最優先。Paradigm（3,000+機関）支援。30日出来高$30B+。OI $600M+。S2は最大6ヶ月延長の可能性",
       "estimatedFdv": "$500M〜$1B",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$0.36〜$0.71/XP"
+      "pointValueEstimate": "~$0.36〜$0.71/XP",
+      "pointsStrategy": "ハイブリッド（手数料XP + OI保有XP + TVL預入XP + Maker流動性XP + Vault XPの複数カテゴリ。各比重は非公開。手数料支払い・OI維持・預入のバランス型）"
     },
     {
       "id": "edgex",
@@ -81,7 +87,8 @@
       "notes": "Tier1。30日出来高$91B（#4）。Morgan Stanley/Barclays/Goldman出身チーム。TGE直近で最も緊急度が高い",
       "estimatedFdv": "$1.5B〜$2.5B",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$30+/pt"
+      "pointValueEstimate": "~$30+/pt",
+      "pointsStrategy": "出来高重視ハイブリッド（取引量60% + リファラル20% + Vault TVL 10% + OI・清算10%。モバイル取引で1.2倍ブースト）"
     },
     {
       "id": "grvt",
@@ -101,7 +108,8 @@
       "notes": "Tier1。30日出来高$35.68B（#6）。Further Ventures, ZKsync, 500 Global支援",
       "estimatedFdv": "$500M〜$1B",
       "fdvType": "estimate",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "出来高重視ハイブリッド（取引量50% + リファラル20% + TVL預入15% + OI 5% + LP 5% + 清算5%。UI取引がAPI取引より高倍率）"
     },
     {
       "id": "extended",
@@ -121,7 +129,8 @@
       "notes": "Tier1。Starknet TVL #1。累計$100B+。30日出来高$29.31B（#8）。Revolut支援",
       "estimatedFdv": "$300M〜$800M",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$1.75〜$4.65/pt"
+      "pointValueEstimate": "~$1.75〜$4.65/pt",
+      "pointsStrategy": "ハイブリッド（取引量 + Vault流動性提供 + リファラルの3要素。比重非公開だが取引量が主要ドライバー。毎週120万ポイント配布）"
     },
     {
       "id": "variational",
@@ -141,7 +150,8 @@
       "notes": "Tier1。50%配分は最大級。$11.8M調達（Coinbase Ventures, Dragonfly, HackVC）。500+エキゾチック市場が差別化要素",
       "estimatedFdv": "$1.15B〜$1.85B",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$12〜$20/pt"
+      "pointValueEstimate": "~$12〜$20/pt",
+      "pointsStrategy": "出来高ベース（累積取引量に比例してポイント獲得。手数料ゼロのため純粋に取引量依存。ティア制でGold以上は1.1倍ブースト）"
     },
     {
       "id": "pacifica",
@@ -161,7 +171,8 @@
       "notes": "Tier1。累計$100B+。日次ピーク$624M。Anti-sybilシステムでwash trader事後スラッシュあり。招待制のため早期参加が重要",
       "estimatedFdv": "$500M〜$3B",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$0.30〜$1.09/pt"
+      "pointValueEstimate": "~$0.30〜$1.09/pt",
+      "pointsStrategy": "出来高ベース（取引量比例で週1,000万pt動的分配。連続取引でStreakブースト倍率上昇。計算式非公開で毎週調整。Anti-sybilでwash trader事後スラッシュ）"
     },
     {
       "id": "genius-terminal",
@@ -181,7 +192,8 @@
       "notes": "Tier2。HL/Asterで取引しながらGeniusポイントも二重取り可能。マルチ8桁投資（YZi Labs）",
       "estimatedFdv": "$300M〜$500M",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$0.75〜$1.25/GP"
+      "pointValueEstimate": "~$0.75〜$1.25/GP",
+      "pointsStrategy": "出来高ベース（スポット$100=1GP、Perp$1,000=1GP。連続取引ストリーク乗数で最大2.2倍。スポット取引が10倍効率的）"
     },
     {
       "id": "ostium",
@@ -201,7 +213,8 @@
       "notes": "Tier2。$23.5M調達（Coinbase Ventures, Wintermute, Susquehanna）。Harvard出身チーム。RWA Perpの先駆者",
       "estimatedFdv": "$250M〜$1B",
       "fdvType": "estimate",
-      "pointValueEstimate": "~$2.86〜$7.14/pt"
+      "pointValueEstimate": "~$2.86〜$7.14/pt",
+      "pointsStrategy": "ハイブリッド（出来高中心 + OLP Vault預入 + リファラル。Boost Windowで特定RWAペアに2倍インセンティブ。動的調整）"
     },
     {
       "id": "reya-network",
@@ -221,7 +234,8 @@
       "notes": "Tier2。30日出来高$14.62B（#10）。40%+の大規模コミュニティ配分",
       "estimatedFdv": "$500M〜$2B",
       "fdvType": "estimate",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ハイブリッド（取引活動~73% : ステーキング~27%。Trading内は出来高+OIで構成。rUSD/srUSDステーキングも対象）"
     },
     {
       "id": "ethereal",
@@ -241,7 +255,8 @@
       "notes": "Tier2。ENA保有者は自動的に15%配分対象。S0参加者30,000+。Ethenaエコシステム連携",
       "estimatedFdv": "$300M〜$1B",
       "fdvType": "estimate",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "TVLベース（USDe預入額×保有時間で日次ポイント蓄積。eUSDeを外部DeFi LPで利用すると最大50倍ブースト。ENA保有者は自動15%配分）"
     },
     {
       "id": "nado",
@@ -261,7 +276,8 @@
       "notes": "Tier2。OI〜$90M。日次出来高〜$500M。NFTフロア0.45 ETH。Krakenエコシステム",
       "estimatedFdv": "不明（Kraken L2）",
       "fdvType": "unknown",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ハイブリッド（取引出来高 + NLP流動性提供 + リファラルの3要素。比率非公開。NFT保有でブースト）"
     },
     {
       "id": "risex",
@@ -281,7 +297,8 @@
       "notes": "Tier2。$7M調達（Vitalik Buterin, Galaxy）。BSX Labs（Base, Blockchain Capital支援）統合",
       "estimatedFdv": "~$200M（IDO評価額）",
       "fdvType": "estimate",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "テストネットPnLベース（ROI%リーダーボード競争。実資金不要。取引利益率でランキング報酬。デイリートランザクション参加も評価）"
     },
     {
       "id": "lighter",
@@ -301,7 +318,8 @@
       "notes": "a16z, Lightspeed, Founders Fund支援。OTCポイント価値〜$50。7日平均出来高$2.7B。トップ3 DEX",
       "estimatedFdv": "$1.46B",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "出来高ベース（週次取引量比例でLighter Points配布。ゼロフィーのため資金調達アービトラージが主戦略。User Pool預入も対象）"
     },
     {
       "id": "aster",
@@ -321,7 +339,8 @@
       "notes": "Binanceエコシステム（YZi Labs）。〜$700M相当のロックトークンがアンロック待ち。CMCローンチで24h +500%",
       "estimatedFdv": "$5.56B",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ハイブリッド（出来高基盤 + ポジション保有時間 + Aster資産利用 + PnL。ウェイト非公開。Machi Modeで清算ユーザーもポイント獲得）"
     },
     {
       "id": "avantis",
@@ -341,7 +360,8 @@
       "notes": "Pantera, Founders Fund, Galaxy, Base Ecosystem Fund支援。Coinbase/Binance/Upbit上場済み。34.5%残存は大きい",
       "estimatedFdv": "$192M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ハイブリッド（固定手数料取引=1ドルあたり最大1XP出来高型、ZFP取引=手数料ベースXP、LP預入=1ドル/日1XP TVL型。AVNTステーク最大3倍ブースト）"
     },
     {
       "id": "synfutures",
@@ -361,7 +381,8 @@
       "notes": "Pantera, Polychain, Susquehanna, Dragonfly支援。2026年ロードマップ: 資産拡張、モバイルアプリ（Q3）、ガバナンス（Q4）",
       "estimatedFdv": "$63M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ハイブリッド（テイカー出来高 + LP TVL + リファラル。ミステリーボックスでランダムポイント獲得。TVLロック期間でスピン回数増加）"
     },
     {
       "id": "perpl",
@@ -381,7 +402,8 @@
       "notes": "Tier4。$9.25M（Dragonfly, Brevan Howard, CMS）。Monad最注目Perp DEX",
       "estimatedFdv": "不明（プレローンチ）",
       "fdvType": "unknown",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "未発表（Monadメインネット未ローンチ。ポイントプログラム詳細は未公開。テストネット参加・コミュニティ貢献が評価対象の可能性）"
     },
     {
       "id": "ivx-levo",
@@ -401,7 +423,8 @@
       "notes": "Tier4。Animoca, Avid3 Ventures支援。Berachain PoL連携",
       "estimatedFdv": "不明（テストネット）",
       "fdvType": "unknown",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "アクティビティベース（テストネット上0DTEオプション取引参加 + Discord・コミュニティ貢献。明確なポイント計算式は非公開）"
     },
     {
       "id": "kodiak",
@@ -421,7 +444,8 @@
       "notes": "Tier4。BerachainのPoLとの統合が差別化",
       "estimatedFdv": "$27M〜$37M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "TVLベース（Kodiak Islands流動性提供でKDK/xKDK獲得。BerachainのPoL統合でBGTガバナンストークンも取得可能。xKDKロック延長で報酬倍率アップ）"
     },
     {
       "id": "astros",
@@ -441,7 +465,8 @@
       "notes": "Tier4。NAVI Protocol統合がユニーク",
       "estimatedFdv": "不明（初期段階）",
       "fdvType": "unknown",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "出来高ベース（Perp取引量に応じてOresトークンが毎日抽選エアドロップ。取引手数料200%リファンド + リファラル50%手数料リベート）"
     },
     {
       "id": "decibel",
@@ -461,7 +486,8 @@
       "notes": "Tier4。Aptos上の新興Perp DEX",
       "estimatedFdv": "不明（テストネット）",
       "fdvType": "unknown",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "TVLベース（USDC預入の時間加重スコア。早期・長期預入ほど有利。後からの大口より早期少額が高評価）"
     },
     {
       "id": "myx-finance",
@@ -481,7 +507,8 @@
       "notes": "Tier4。Lineaエアドロップとの二重取りの可能性",
       "estimatedFdv": "$614M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ハイブリッド（取引1USDCにつき1Gem出来高型 + ポジション保有で10K USDCあたり毎時1,420Gems OI型。MLP保有でもGems付与。2Gems=1MYXで変換）"
     },
     {
       "id": "ranger-finance",
@@ -501,7 +528,8 @@
       "notes": "Tier4。Perp DEXアグリゲーター分野",
       "estimatedFdv": "$11.2M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "出来高ベース（取引量比例でRanger Points獲得。週50万pt分配。リファラルで招待者手数料の70%還元。Ranger Ranksで取引活動を時間単位評価）"
     },
     {
       "id": "apex-protocol",
@@ -521,7 +549,8 @@
       "notes": "FDV〜$1.3B。2026年ロードマップ: ApeX Omni AppChain。Dragonfly支援",
       "estimatedFdv": "$175M〜$200M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "出来高ベース（取引量比例のXP→APEXトークン変換。25週間で25M APEX分配。ApeX ProからOmniへの移行ボーナスXPあり）"
     },
     {
       "id": "dydx",
@@ -541,7 +570,8 @@
       "notes": "次回アンロック: 2026年3月1日。新規エアドロップの可能性は低い",
       "estimatedFdv": "$84M〜$132M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "アフィリエイトベース（紹介ユーザーのテイカー手数料30-50%を自動獲得。Boosterプログラムで$210Kプールを紹介取引量比率で按分。トレーダー直接のポイントプログラムなし）"
     },
     {
       "id": "vertex-protocol",
@@ -561,7 +591,8 @@
       "notes": "累計$26B+。収益シェアモデル",
       "estimatedFdv": "~$0（Ink移行中）",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ステーキングベース（VRTX手数料50-100%バイバック→ステーカーに自動複利分配。Base APY + Fee APY + Loyalty APYの3層構造。xVRTXで流動性ステーキング）"
     },
     {
       "id": "gmx",
@@ -581,7 +612,8 @@
       "notes": "DeFi Perp DEXの代表格。手数料収入$100-200M",
       "estimatedFdv": "$64M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "TVLベース（GM/GLVプールLP提供で取引手数料63%獲得。自動複利でGM/GLVトークン価格に反映。GLV Vaultsが流動性を動的再配分。LPはトレーダー対手方リスク負担）"
     },
     {
       "id": "drift-protocol",
@@ -601,7 +633,8 @@
       "notes": "Solana DeFi中核。Pacificaに日次出来高で追い抜かれた",
       "estimatedFdv": "$80M〜$86M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "出来高ベース（Perp取引量比例のFUELポイント→DRIFT変換。S2で総供給7.82%配分。取引量マイルストーン線形分配。ウォッシュトレード失格）"
     },
     {
       "id": "jupiter-perps",
@@ -621,7 +654,8 @@
       "notes": "Solana DeFiリーダー",
       "estimatedFdv": "$1.0B〜$1.1B",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ステーキング+ガバナンスベース（JUPステーク+投票参加でASR報酬。報酬源=Perps手数料25%+DCA手数料+FLG75%+JUPバイバック。JLP保有で別途LP報酬）"
     },
     {
       "id": "levana-perps",
@@ -641,7 +675,8 @@
       "notes": "Sei上の主要Perp DEX",
       "estimatedFdv": "$1M〜$2M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "TVLベース（LP/xLP流動性提供でリアルイールド獲得。xLP=45日ロックで約2倍報酬。収益はETH/BTC/ATOM等の実トークンで支払い）"
     },
     {
       "id": "synthetix-perps",
@@ -661,7 +696,176 @@
       "notes": "Ethereumメインネット初の成功したCLOB Perp DEX",
       "estimatedFdv": "$134M〜$138M",
       "fdvType": "live",
-      "pointValueEstimate": null
+      "pointValueEstimate": null,
+      "pointsStrategy": "ステーキングベース（SNXステークで取引手数料週次按分。420 Poolで債務管理不要の簡素化。5M SNXが12ヶ月で時間加重分配。sUSD預入でマーケットメイキング収益も可能）"
+    },
+    {
+      "id": "aevo",
+      "name": "Aevo",
+      "chain": "ethereum",
+      "chains": ["ethereum"],
+      "website": "https://www.aevo.xyz",
+      "description": "Ribbon Financeから進化した分散型デリバティブ取引所。OP Stack L2ロールアップ上でオプション・Perp・プレローンチトークン取引。オフチェーンオーダーブック+オンチェーン決済。累計$30B+取引量。5,000+ TPS。",
+      "hasToken": true,
+      "tokenName": "AEVO",
+      "airdropPotential": "medium",
+      "airdropStatus": "初回エアドロ完了（2024年3月、供給量3%配布）。現在はTrading Epoch報酬（Epoch 2で100万AEVO配布）＋プレローンチ市場ステーカー向けパートナートークンエアドロ継続中",
+      "criteria": ["AEVOステーキング（Silver/Gold/Platinum/Diamond）", "プレローンチ市場取引", "Trading Epochランキング参加", "ステーキング量でブースト（最大5倍）"],
+      "tvl": "$22.25M",
+      "twitter": ["@aevoxyz"],
+      "xSearchQuery": "Aevo airdrop OR AEVO staking OR trading epoch rewards",
+      "notes": "Paradigm/Dragonfly/Coinbase Ventures/Binance Labs支援。チームはCoinbase/Kraken/Goldman Sachs出身。91%アンロック済みで売り圧リスク低。ATHから99%下落の割安圏。Xフォロワー約122K",
+      "estimatedFdv": "$23M",
+      "fdvType": "live",
+      "pointValueEstimate": null,
+      "pointsStrategy": "ステーキングベース（AEVOステークでティア制。プレローンチ取引ボリュームに応じてパートナートークンエアドロ。Epoch報酬はランキングベース）"
+    },
+    {
+      "id": "bluefin",
+      "name": "Bluefin",
+      "chain": "sui",
+      "chains": ["sui"],
+      "website": "https://bluefin.io",
+      "description": "Suiブロックチェーン上の分散型スポット・デリバティブ取引プラットフォーム。オーダーブック型で最大20倍レバレッジ。Sui上取引量No.1。累計$37B+取引量。",
+      "hasToken": true,
+      "tokenName": "BLUE",
+      "airdropPotential": "medium",
+      "airdropStatus": "初回エアドロ完了（2024年12月TGE、供給量19.68%配布）。Trade & Earn（供給量6%）継続中。毎週水曜クレーム可能",
+      "criteria": ["Trade & Earn（取引量ベース）", "Stable Pools流動性提供", "Spot Liquidity提供", "リファラル（10%報酬）"],
+      "tvl": "$27.1M",
+      "twitter": ["@bluefinapp"],
+      "xSearchQuery": "Bluefin airdrop OR BLUE token OR Trade Earn Sui",
+      "notes": "Polychain/SIG/Brevan Howard/Sui Group支援。2026年DAO完全移行・モバイルアプリ予定。投資家向け28%アンロック開始（2025年12月〜）で下落圧力。ATHから97%下落。Xフォロワー約172K",
+      "estimatedFdv": "$18M〜$24M",
+      "fdvType": "live",
+      "pointValueEstimate": null,
+      "pointsStrategy": "出来高ベース（Trade & Earn: 取引量比例でBLUEポイント獲得→1:1でBLUEトークンに変換。Stable Pool LP・Spot LPで追加報酬。SUI+BLUEデュアル報酬）"
+    },
+    {
+      "id": "gains-network",
+      "name": "Gains Network (gTrade)",
+      "chain": "arbitrum",
+      "chains": ["arbitrum", "base", "polygon", "apechain"],
+      "website": "https://gains.trade",
+      "description": "280+市場（暗号資産・FX・株式・コモディティ）で最大1000倍レバレッジの分散型Perp DEX。完全オンチェーン合成資産モデル。VCなしフェアローンチ。累計$75B+取引量。",
+      "hasToken": true,
+      "tokenName": "GNS",
+      "airdropPotential": "low",
+      "airdropStatus": "エアドロップなし。フェアローンチモデル。プロトコル収益100%がGNSバーンに充当されるデフレモデル",
+      "criteria": ["GNSステーキング（取引手数料分配）", "トレーディングコンペ参加", "gDAI/gUSDC Vault流動性提供"],
+      "tvl": "$24.7M",
+      "twitter": ["@GainsNetwork_io"],
+      "xSearchQuery": "Gains Network GNS staking OR gTrade rewards OR burn",
+      "notes": "VCなしフェアローンチ。FDV比で異常に高い収益性（日次$130K、Uniswap超え）。日次バーン率1.54%。Polygonから$750Kグラントのみ。フランス拠点。Xフォロワー約61.5K",
+      "estimatedFdv": "$18M〜$30.5M",
+      "fdvType": "live",
+      "pointValueEstimate": null,
+      "pointsStrategy": "ステーキングベース（GNSステークで取引手数料リアルイールド分配。100%バーンモデルでトークン供給量が減少。gDAI/gUSDC Vault預入で別途イールド）"
+    },
+    {
+      "id": "storm-trade",
+      "name": "Storm Trade",
+      "chain": "ton",
+      "chains": ["ton"],
+      "website": "https://storm.tg",
+      "description": "TONブロックチェーン上のPerp DEX。Telegramディープインテグレーション。暗号資産・FX・株式・コモディティを最大500倍レバ。TON上デリバティブDEXでTVL最大。SocialFi要素。",
+      "hasToken": true,
+      "tokenName": "STORM",
+      "airdropPotential": "medium",
+      "airdropStatus": "シーズン制Reward Points (RP)プログラム稼働中。各シーズン終了時にRPに応じてSTORM配布",
+      "criteria": ["取引量（$100ごとに10RP）", "流動性提供（$100/日で5RP）", "リファラル（10RP、TG Premium25RP）", "Storm Academy完了"],
+      "tvl": "$13M〜$33M",
+      "twitter": ["@storm_trade_ton"],
+      "xSearchQuery": "Storm Trade STORM airdrop OR points OR season TON",
+      "notes": "TON Foundation/Cointelegraph Accelerator支援。Telegramアプリ内利用可能でWeb3初心者にアクセスしやすい。STORMステーキングで手数料15%分配。ATH $0.046から大幅下落。Xフォロワー約458K",
+      "estimatedFdv": "$6.3M〜$7.8M",
+      "fdvType": "live",
+      "pointValueEstimate": null,
+      "pointsStrategy": "ポイントベース（Reward Points: 取引$100→10RP、LP $100/日→5RP、リファラル→10-500RP。シーズン終了時にRPをSTORMに変換。Storm Academy教育モジュールでもRP獲得）"
+    },
+    {
+      "id": "woofi",
+      "name": "WOOFi (WOO Network)",
+      "chain": "multi",
+      "chains": ["ethereum", "arbitrum", "optimism", "base", "bnb", "polygon", "linea", "zksync"],
+      "website": "https://fi.woo.org",
+      "description": "12+チェーン展開のオールインワンDeFiアプリ。スワップ・ステーキング・イールド・Perp取引。CeFiとDeFi両方でユーティリティを持つ数少ないトークン。WOOFi ProはオンチェーンCLOB。",
+      "hasToken": true,
+      "tokenName": "WOO",
+      "airdropPotential": "low",
+      "airdropStatus": "エアドロップなし。WOOステーキングでプロトコル手数料80%分配。NFTブースターシステム",
+      "criteria": ["WOOステーキング（手数料80%分配）", "NFTブースター獲得", "WOOFi Pro取引", "クロスチェーンスワップ"],
+      "tvl": "$17.2M",
+      "twitter": ["@_WOOFi"],
+      "xSearchQuery": "WOOFi WOO staking OR rewards OR yield",
+      "notes": "Binance Labs支援。2025年11月にCEX部門売却、DeFi/AIに集中。トークン30億→22.3億にバーン。ATH $1.78から99%下落。CeFi+DeFi両輪ユーティリティ。Xフォロワー約188K",
+      "estimatedFdv": "$47.5M〜$84M",
+      "fdvType": "live",
+      "pointValueEstimate": null,
+      "pointsStrategy": "ステーキングベース（WOOステークで手数料80%按分。RPGスタイルNFTブースターでイールド強化。WOOFi Pro取引手数料もステーカーに分配）"
+    },
+    {
+      "id": "orderly-network",
+      "name": "Orderly Network",
+      "chain": "multi",
+      "chains": ["ethereum", "arbitrum", "optimism", "bnb", "polygon"],
+      "website": "https://orderly.network",
+      "description": "オムニチェーン流動性レイヤーL2。オーダーブック型低レイテンシ取引インフラ。「Perp DEXのShopify」。Orderly ONEで誰でもDEX構築可能。20+マーケットメーカー連携。Sub-200msレイテンシ。",
+      "hasToken": true,
+      "tokenName": "ORDER",
+      "airdropPotential": "low",
+      "airdropStatus": "初回エアドロ完了（2024年8月TGE、供給量13.3%即時全量アンロック配布）。現在はVALOR/esORDERステーキングシステム",
+      "criteria": ["ORDERステーキング（VALOR蓄積）", "Orderly対応DEXでの取引", "純手数料60%USDC報酬"],
+      "tvl": "N/A",
+      "twitter": ["@OrderlyNetwork"],
+      "xSearchQuery": "Orderly Network ORDER staking OR VALOR rewards",
+      "notes": "Pantera/Dragonfly/Sequoia China/Jump Crypto/OKX Ventures支援。ステーキングAPY約50%。手数料60%USDC分配。ATH $0.49から88%下落。Orderly ONEでノーコードDEX構築。Xフォロワー約400K+",
+      "estimatedFdv": "$52M〜$62M",
+      "fdvType": "live",
+      "pointValueEstimate": null,
+      "pointsStrategy": "ステーキングベース（ORDERステーク→VALOR（非譲渡型メトリクス）蓄積。純手数料60%をUSDCで週次分配。30%がバイバック。esORDERシステムで長期保有インセンティブ）"
+    },
+    {
+      "id": "backpack-exchange",
+      "name": "Backpack Exchange",
+      "chain": "solana",
+      "chains": ["solana", "ethereum"],
+      "website": "https://backpack.exchange",
+      "description": "Solana発ハイブリッド暗号資産取引所。セルフカストディウォレット・取引所・Mad Lads NFT統合。VASP（ドバイVARA）+MiFID II（EU）ライセンス。Perp取引が取引量94%。累計$400B+取引量。",
+      "hasToken": false,
+      "tokenName": null,
+      "airdropPotential": "confirmed",
+      "airdropStatus": "TGE時期未発表。供給量25%をTGEで配布（24%=Pointsプログラム参加者、1%=Mad Lads NFTホルダー）。Season 4完了→エピローグ（最終フェーズ）進行中",
+      "criteria": ["先物取引（取引量94%）", "レンディング", "リファラル", "KYC必須", "エピローグ期間中の積極利用"],
+      "tvl": "$400M (AUM)",
+      "twitter": ["@Backpack"],
+      "xSearchQuery": "Backpack Exchange airdrop OR token TGE OR epilogue OR points",
+      "notes": "Placeholder VC/Jump Crypto/Multicoin/Wintermute支援。元FTX/Alamedaメンバー設立。FTX EU買収で欧州展開。$10億+バリュエーション。SECに登録された株式をオンチェーンで初リスト。TGE前最大級チャンス。Xフォロワー多数",
+      "estimatedFdv": "$800M〜$1.4B",
+      "fdvType": "estimate",
+      "pointValueEstimate": null,
+      "pointsStrategy": "ポイントベース（毎週金曜にスポット・先物・レンディング活動でポイント配布。TGE時にトークン変換。Sybil排除・エピローグ再分配で公正化。Season 1-3で200M-300Mポイント蓄積済み）"
+    },
+    {
+      "id": "hotstuff",
+      "name": "Hotstuff",
+      "chain": "hotstuff",
+      "chains": ["hotstuff"],
+      "website": "https://www.hotstuff.trade",
+      "description": "DeFi特化型L1ブロックチェーン。DracoBFTコンセンサスで75msブロックタイム・150msファイナリティ・200K+ TPS。オンチェーンCLOBでPerp・スポット・オプションを1マージンアカウントで取引。ガスレス注文。",
+      "hasToken": false,
+      "tokenName": null,
+      "airdropPotential": "high",
+      "airdropStatus": "トークン未発行。ウェイトリストポイントプログラム稼働中（X/Twitter連携10pt、Discord参加10pt、リファラル10pt/人）。テストネット公開中。メインネット前",
+      "criteria": ["ウェイトリスト登録", "ソーシャルタスク（X/Discord）", "リファラル", "テストネット参加（Perp/スポット取引）"],
+      "tvl": "N/A",
+      "twitter": ["@tradehotstuff"],
+      "xSearchQuery": "Hotstuff trade airdrop OR token OR testnet OR waitlist",
+      "notes": "Delphi Digital/Dialectic/Stake Capital/Tykhe Ventures支援。1inch/Safe/Biconomy/Socket創業者も出資。元Syndr。シンガポール拠点。テストネットで$500K流動性が12時間で1000+人から集結。バリデーターが法定通貨ゲートウェイとして機能する独自設計。CEO: Vyom Sharma",
+      "estimatedFdv": "N/A",
+      "fdvType": "estimate",
+      "pointValueEstimate": null,
+      "pointsStrategy": "ウェイトリストベース（ソーシャルタスク・リファラルでポイント獲得→ウェイトリスト順位上昇。テストネット参加で追加インセンティブの可能性。メインネット前の早期参加が鍵）"
     }
   ]
 }
