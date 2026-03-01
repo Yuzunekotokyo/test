@@ -359,6 +359,14 @@ header {
 .chain-starknet { background: #ec796b20; color: #ec796b; border: 1px solid #ec796b40; }
 .chain-hyperliquid { background: #00ffcc20; color: #00ffcc; border: 1px solid #00ffcc40; }
 .chain-multi { background: #ffffff10; color: var(--text-secondary); border: 1px solid #ffffff20; }
+.chain-ton { background: #0098ea20; color: #0098ea; border: 1px solid #0098ea40; }
+.chain-polygon { background: #8247e520; color: #a06aff; border: 1px solid #8247e540; }
+.chain-apechain { background: #0046ff20; color: #4d7bff; border: 1px solid #0046ff40; }
+.chain-hotstuff { background: #ff450020; color: #ff6b3d; border: 1px solid #ff450040; }
+.chain-ink { background: #7b61ff20; color: #9b8aff; border: 1px solid #7b61ff40; }
+.chain-rise { background: #ff6b6b20; color: #ff6b6b; border: 1px solid #ff6b6b40; }
+.chain-bnb { background: #f0b90b20; color: #f0b90b; border: 1px solid #f0b90b40; }
+.chain-optimism { background: #ff042020; color: #ff4d4d; border: 1px solid #ff042040; }
 
 .card-badges {
     display: flex;
@@ -555,6 +563,88 @@ header {
     padding: 4px 10px;
     flex: 1;
     text-align: center;
+}
+
+/* === Points Strategy === */
+.card-strategy {
+    margin-bottom: 12px;
+}
+
+.strategy-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    padding: 6px 10px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--accent-purple);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    text-align: left;
+}
+
+.strategy-toggle:hover {
+    border-color: var(--accent-purple);
+    background: #bc8cff10;
+}
+
+.strategy-toggle .arrow {
+    transition: transform 0.2s;
+    font-size: 0.7rem;
+}
+
+.strategy-toggle.open .arrow {
+    transform: rotate(90deg);
+}
+
+.strategy-content {
+    display: none;
+    padding: 10px 12px;
+    margin-top: 4px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    animation: slideDown 0.2s ease;
+}
+
+.strategy-content.open {
+    display: block;
+}
+
+/* === Sort Controls === */
+.sort-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort-group label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.sort-group select {
+    padding: 6px 10px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-family: inherit;
+}
+
+.sort-group select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
 }
 
 /* === Modal === */

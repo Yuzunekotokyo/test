@@ -89,6 +89,17 @@
                 <option value="yes">発行済み</option>
             </select>
         </div>
+        <div class="filter-group sort-group">
+            <label>並び替え:</label>
+            <select id="sortSelect">
+                <option value="default">デフォルト</option>
+                <option value="fdv-desc">FDV 高い順</option>
+                <option value="fdv-asc">FDV 低い順</option>
+                <option value="potential">期待度 高い順</option>
+                <option value="tvl-desc">TVL 高い順</option>
+                <option value="name">名前順</option>
+            </select>
+        </div>
         <div class="filter-group">
             <label>検索:</label>
             <input type="text" id="searchInput" placeholder="プロトコル名で検索...">

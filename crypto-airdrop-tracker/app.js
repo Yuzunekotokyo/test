@@ -8,6 +8,7 @@ class AirdropTracker {
         this.activePotential = 'all';
         this.activeToken = 'all';
         this.searchQuery = '';
+        this.activeSort = 'default';
         this.settings = this.loadSettings();
         this.tweetCache = {};
         this.init();
@@ -188,7 +189,14 @@ class AirdropTracker {
                 <h4>エアドロップ対象基準</h4>
                 <div class="criteria-list">${criteriaHtml}</div>
             </div>
-            ${protocol.notes ? `<p class="card-description" style="font-style: italic; font-size: 0.8rem;">📝 ${protocol.notes}</p>` : ''}
+            ${protocol.pointsStrategy ? `
+            <div class="card-strategy">
+                <button class="strategy-toggle" onclick="app.toggleStrategy(this)">
+                    <span class="arrow">&#9654;</span> ポイント戦略
+                </button>
+                <div class="strategy-content">${protocol.pointsStrategy}</div>
+            </div>` : ''}
+            ${protocol.notes ? `<p class="card-description" style="font-style: italic; font-size: 0.8rem;">${protocol.notes}</p>` : ''}
             ${protocol.estimatedFdv ? `
             <div class="card-valuation">
                 ${protocol.fdvRank ? `
@@ -220,9 +228,9 @@ class AirdropTracker {
         </div>`;
     }
 
-    // === Filtering ===
+    // === Filtering & Sorting ===
     getFilteredProtocols() {
-        return this.protocols.filter(p => {
+        const filtered = this.protocols.filter(p => {
             // Chain filter
             if (this.activeChain !== 'all') {
                 const chains = p.chains || [p.chain];
@@ -254,6 +262,41 @@ class AirdropTracker {
 
             return true;
         });
+
+        return this.sortProtocols(filtered);
+    }
+
+    sortProtocols(protocols) {
+        const potentialOrder = { confirmed: 0, very_high: 1, high: 2, medium: 3, low: 4 };
+
+        switch (this.activeSort) {
+            case 'fdv-desc':
+                return [...protocols].sort((a, b) => {
+                    const aFdv = this.parseFdvToMillions(a.estimatedFdv) || 0;
+                    const bFdv = this.parseFdvToMillions(b.estimatedFdv) || 0;
+                    return bFdv - aFdv;
+                });
+            case 'fdv-asc':
+                return [...protocols].sort((a, b) => {
+                    const aFdv = this.parseFdvToMillions(a.estimatedFdv) || 0;
+                    const bFdv = this.parseFdvToMillions(b.estimatedFdv) || 0;
+                    return aFdv - bFdv;
+                });
+            case 'potential':
+                return [...protocols].sort((a, b) => {
+                    return (potentialOrder[a.airdropPotential] ?? 5) - (potentialOrder[b.airdropPotential] ?? 5);
+                });
+            case 'tvl-desc':
+                return [...protocols].sort((a, b) => {
+                    const aTvl = this.parseFdvToMillions(a.tvl) || 0;
+                    const bTvl = this.parseFdvToMillions(b.tvl) || 0;
+                    return bTvl - aTvl;
+                });
+            case 'name':
+                return [...protocols].sort((a, b) => a.name.localeCompare(b.name));
+            default:
+                return protocols;
+        }
     }
 
     // === Stats ===
@@ -370,6 +413,12 @@ class AirdropTracker {
         }).join('');
 
         modalBody.innerHTML = tweetsHtml;
+    }
+
+    toggleStrategy(button) {
+        button.classList.toggle('open');
+        const content = button.nextElementSibling;
+        content.classList.toggle('open');
     }
 
     openXSearch(query) {
@@ -503,6 +552,12 @@ class AirdropTracker {
             this.activeToken = e.target.value;
             this.renderProtocols();
             this.updateStats();
+        });
+
+        // Sort
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            this.activeSort = e.target.value;
+            this.renderProtocols();
         });
 
         // Search
