@@ -17,6 +17,7 @@ class AirdropTracker {
     async init() {
         await this.loadData();
         this.computeFdvRanks();
+        this.renderRecommendations();
         this.renderChainFilters();
         this.renderProtocols();
         this.updateStats();
@@ -78,6 +79,117 @@ class AirdropTracker {
             p.fdvRank = rankMap[p.id] || null;
         });
         this.totalRanked = ranked.length;
+    }
+
+    // === Top 3 Recommendations ===
+    computeRecommendations() {
+        const potentialScore = { confirmed: 50, very_high: 40, high: 30, medium: 15, low: 5 };
+
+        const scored = this.protocols.map(p => {
+            let score = 0;
+            let reasons = [];
+
+            // Airdrop potential weight
+            score += potentialScore[p.airdropPotential] || 0;
+
+            // Pre-TGE bonus (token not yet launched = bigger opportunity)
+            if (!p.hasToken) {
+                score += 25;
+                reasons.push('TGE前 - トークン未発行');
+            }
+
+            // High FDV = larger potential airdrop value
+            const fdv = this.parseFdvToMillions(p.estimatedFdv);
+            if (fdv) {
+                if (fdv >= 500) { score += 20; reasons.push(`FDV ${p.estimatedFdv} - 大型案件`); }
+                else if (fdv >= 100) { score += 10; }
+            }
+
+            // Active points/farming program
+            const status = (p.airdropStatus || '').toLowerCase();
+            if (status.includes('エピローグ') || status.includes('最終')) {
+                score += 15;
+                reasons.push('最終フェーズ - 緊急度高');
+            }
+            if (status.includes('tge') && (status.includes('q1') || status.includes('2026年2') || status.includes('2026年3'))) {
+                score += 15;
+                reasons.push('TGE間近');
+            }
+            if (status.includes('シーズン') || status.includes('season') || status.includes('ポイント') || status.includes('xp')) {
+                score += 8;
+            }
+
+            // TVL as signal of traction
+            const tvl = this.parseFdvToMillions(p.tvl);
+            if (tvl && tvl >= 100) { score += 5; }
+
+            // Point value estimate available = more concrete opportunity
+            if (p.pointValueEstimate) {
+                score += 10;
+                reasons.push(`推定1pt = ${p.pointValueEstimate}`);
+            }
+
+            // Generate primary reason if none set
+            if (reasons.length === 0) {
+                if (p.airdropPotential === 'confirmed') reasons.push('エアドロップ確定');
+                else if (p.airdropPotential === 'high') reasons.push('高期待度');
+                else reasons.push(p.airdropStatus || '');
+            }
+
+            return { protocol: p, score, reason: reasons[0] || '' };
+        });
+
+        return scored.sort((a, b) => b.score - a.score).slice(0, 3);
+    }
+
+    renderRecommendations() {
+        const top3 = this.computeRecommendations();
+        const container = document.getElementById('recoCards');
+        const dateEl = document.getElementById('recoDate');
+
+        const now = new Date();
+        dateEl.textContent = `${now.getFullYear()}/${String(now.getMonth() + 1).padStart(2, '0')}/${String(now.getDate()).padStart(2, '0')} 時点`;
+
+        container.innerHTML = top3.map((item, i) => {
+            const p = item.protocol;
+            const chainBadges = (p.chains || [p.chain])
+                .slice(0, 3)
+                .map(c => {
+                    const chain = this.chains.find(ch => ch.id === c);
+                    return `<span class="card-chain chain-${c}">${chain ? chain.name : c}</span>`;
+                }).join('');
+
+            return `
+            <div class="reco-card">
+                <span class="reco-rank">#${i + 1}</span>
+                <div class="reco-name">
+                    ${p.website
+                        ? `<a href="${p.website}" target="_blank" rel="noopener noreferrer">${p.name}</a>`
+                        : p.name
+                    }
+                </div>
+                <div class="reco-chain-badges">${chainBadges}</div>
+                <div class="reco-reason">${item.reason}</div>
+                <p class="reco-desc">${p.airdropStatus}</p>
+                <div class="reco-stats">
+                    ${p.estimatedFdv && p.estimatedFdv !== 'N/A' ? `
+                    <div class="reco-stat">
+                        <span class="reco-stat-label">FDV</span>
+                        <span class="reco-stat-value">${p.estimatedFdv}</span>
+                    </div>` : ''}
+                    ${p.tvl && p.tvl !== 'N/A' ? `
+                    <div class="reco-stat">
+                        <span class="reco-stat-label">TVL</span>
+                        <span class="reco-stat-value">${p.tvl}</span>
+                    </div>` : ''}
+                    ${p.pointValueEstimate ? `
+                    <div class="reco-stat">
+                        <span class="reco-stat-label">1pt</span>
+                        <span class="reco-stat-value" style="color: var(--accent-cyan);">${p.pointValueEstimate}</span>
+                    </div>` : ''}
+                </div>
+            </div>`;
+        }).join('');
     }
 
     // === Settings ===
