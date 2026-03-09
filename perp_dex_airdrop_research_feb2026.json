@@ -90,32 +90,39 @@
       "ticker": "DIME",
       "chains": ["Paradex Chain (Starknet appchain)"],
       "category": "Perpetual DEX / Options / Spot",
-      "token_launched": false,
-      "airdrop_status": "confirmed_pre_tge",
-      "airdrop_likelihood": "confirmed",
-      "description": "Zero-fee, privacy-focused DEX on Starknet incubated by Paradigm. Unified portfolio margin across spot, perps, and options. Supports 250+ markets. Privacy via zk-encrypted accounts.",
+      "token_launched": true,
+      "airdrop_status": "tge_completed_underperformed",
+      "airdrop_likelihood": "low",
+      "description": "Zero-fee, privacy-focused DEX on Starknet incubated by Paradigm. Unified portfolio margin across spot, perps, and options. Supports 250+ markets. TGE completed March 5, 2026 but FDV significantly underperformed expectations.",
       "key_metrics": {
-        "cumulative_volume": "$210+ billion",
-        "tvl": "~$200 million",
-        "open_interest": "$600+ million",
-        "30_day_volume": "$30.25 billion"
+        "cumulative_volume": "$250+ billion",
+        "tvl": "$3+ billion",
+        "open_interest": "$550+ million",
+        "token_price": "~$0.045",
+        "fdv": "$43M (vs pre-TGE estimate of $500M-$1B)",
+        "ath": "$0.053 (March 6, 2026)",
+        "circulating_supply": "245M / 1B"
       },
       "airdrop_details": {
         "token": "DIME",
-        "genesis_allocation": "20% of supply (5% Season 1, 15% Season 2)",
+        "tge_date": "March 5, 2026",
+        "genesis_allocation": "25% of supply at TGE (S1: 5%, S2: 20%)",
         "community_total": "57.6% of supply",
-        "ongoing_community_rewards_post_airdrop": "26.6%",
-        "season_2_status": "Active - 4M XP distributed weekly (Fridays)",
-        "season_2_extension": "Extended by up to 6 months for DIME listing preparation",
-        "tge_expected": "H1 2026",
-        "how_to_earn": [
-          "Trade to earn Position XP, Fee XP, Liquidation XP",
-          "Deposit USDC into Vault for Vault XP",
-          "Referral program (10% of invitee's XP; invitees get 5% XP boost)",
-          "Link X/Discord for anti-sybil community XP boost"
+        "remaining_community": "32.6% to be distributed in future seasons",
+        "outcome": "FDV launched at $43M — roughly 1/10th of pre-TGE estimates ($500M-$1B). No major exchange listings at launch.",
+        "how_to_earn_now": [
+          "DIME staking for protocol rewards",
+          "Trading fee rewards",
+          "Future season distributions (32.6% remaining)"
         ]
       },
       "funding": "Incubated by Paradigm (access to 3,000+ institutions)",
+      "notable_events": [
+        "TGE March 5, 2026 - significantly underperformed expectations",
+        "FDV $43M vs estimated $500M-$1B (>90% miss)",
+        "No major CEX listing at launch",
+        "TVL $3B+ despite token underperformance"
+      ],
       "twitter": "@paradex",
       "website": "https://paradex.trade"
     },
@@ -1330,7 +1337,7 @@
     "starknet": {
       "chain": "Starknet",
       "protocols": [
-        {"name": "Paradex", "token": "DIME", "airdrop": "confirmed (20% genesis, 57.6% total community)"},
+        {"name": "Paradex", "token": "DIME", "airdrop": "TGE completed Mar 5, 2026 (FDV $43M, underperformed)"},
         {"name": "Extended", "token": "TBD", "airdrop": "confirmed (30% community, TGE H1 2026)"},
         {"name": "edgeX", "token": "TBD", "airdrop": "confirmed (TGE by Mar 31, 2026)"}
       ],
@@ -1385,7 +1392,7 @@
     "tier_1_highest_priority": {
       "label": "Confirmed airdrops with large allocations, imminent TGEs",
       "protocols": [
-        "Paradex (DIME) - 57.6% community, Season 2 active",
+        "Paradex (DIME) - TGE完了、FDV $43Mで撃沈（予想の1/10以下）。残り32.6%コミュニティ配分あり",
         "GRVT - 22% airdrop, TGE Q1 2026",
         "edgeX - Pre-TGE XP farming, TGE by Mar 31, 2026",
         "Extended - 30% community, TGE H1 2026",
