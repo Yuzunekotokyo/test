@@ -42,6 +42,17 @@
         </div>
     </div>
 
+    <!-- Top 3 Recommendations -->
+    <section id="recommendations" class="recommendations">
+        <div class="reco-header">
+            <h2>今のおすすめ TOP 3</h2>
+            <span class="reco-date" id="recoDate"></span>
+        </div>
+        <div id="recoCards" class="reco-cards">
+            <!-- Dynamically generated -->
+        </div>
+    </section>
+
     <!-- Stats Summary -->
     <div class="stats-bar">
         <div class="stat-item">
@@ -87,6 +98,17 @@
                 <option value="all">全て</option>
                 <option value="no">未発行（狙い目）</option>
                 <option value="yes">発行済み</option>
+            </select>
+        </div>
+        <div class="filter-group sort-group">
+            <label>並び替え:</label>
+            <select id="sortSelect">
+                <option value="default">デフォルト</option>
+                <option value="fdv-desc">FDV 高い順</option>
+                <option value="fdv-asc">FDV 低い順</option>
+                <option value="potential">期待度 高い順</option>
+                <option value="tvl-desc">TVL 高い順</option>
+                <option value="name">名前順</option>
             </select>
         </div>
         <div class="filter-group">
