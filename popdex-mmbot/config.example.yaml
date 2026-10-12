@@ -1,0 +1,57 @@
+# Copy to config.yaml and edit. Secrets can also come from env:
+#   POPDEX_API_KEY / POPDEX_API_SECRET / POPDEX_PRIVATE_KEY
+dry_run: true            # true = paper exchange, no real orders
+log_dir: logs
+
+market:
+  symbol: BTC-PERP       # PopDEX symbol (confirm exact string in the UI/docs)
+  reference_symbol: BTCUSDT
+  tick_size: 0.1
+  lot_size: 0.0001          # confirm PopDEX step size; too coarse kills size variation
+  min_notional_usd: 10
+
+quote:
+  base_spread_bps: 6      # half spread from fair value, each side
+  spread_jitter_bps: 2
+  levels: 1
+  level_step_bps: 4
+  inventory_skew_bps: 8
+  order_notional_min_usd: 25
+  order_notional_max_usd: 120
+  round_size_prob: 0.35
+  requote_threshold_bps: 2.5
+  max_order_age_s: 240
+
+human:
+  loop_interval_s: [15, 75]       # seconds between decisions (randomised)
+  break_prob: 0.04                # per cycle
+  break_duration_s: [240, 1500]
+  active_hours_local: [8, 24]
+  timezone: Asia/Tokyo
+  off_hours_activity_prob: 0.15
+  target_trades_per_day: [15, 50]
+  taker_ratio: 0.2                # ~20% of trades hit the book
+  taker_reduce_only_prob: 0.7     # most takers are used to flatten inventory
+  taker_notional_usd: [15, 60]
+  one_sided_prob: 0.2
+
+risk:
+  account_equity_usd: 800
+  max_position_notional_usd: 400   # ~0.5x
+  max_leverage: 1.5
+  max_daily_loss_usd: 40           # 5%
+  max_drawdown_usd: 80             # 10%
+  stale_price_s: 20
+  max_spread_bps_to_quote: 60
+  funding_rate_abs_limit: 0.001
+  max_orders_per_minute: 6
+
+exchange:
+  name: paper               # paper | popdex
+  rest_url: https://api.popdex.ai
+  ws_url: ""
+  api_key: ""
+  api_secret: ""
+  private_key: ""
+  maker_fee_bps: -1.0       # negative = rebate; set from your VIP tier
+  taker_fee_bps: 4.0
