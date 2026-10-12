@@ -28,18 +28,38 @@ python run.py --offline              # ネット無しのランダムウォー�
 python run.py                        # Binance 価格でペーパー（dry_run: true）
 ```
 
-本番は `dry_run: false` と `exchange.name: popdex` を設定してから。鍵は
-`POPDEX_API_KEY` / `POPDEX_API_SECRET` / `POPDEX_PRIVATE_KEY` 環境変数で渡せます。
+## PopDEX に接続する手順
+
+PopDEX の発注は REST ではなく **自前チェーンのコントラクト呼び出し**（Order precompile）で、
+認証は「メインウォレットが承認した Agent Key で tx に署名する」方式です。
+詳細は `docs/popdex-api-notes.md`。
+
+```bash
+# 1. Agent Key を作ってメインウォレットから承認（メイン秘密鍵はこの 1 回だけ使う）
+read -rs MAIN_PRIVATE_KEY && export MAIN_PRIVATE_KEY
+python scripts/approve_agent.py --testnet   # まず testnet。本番は --testnet 無し
+unset MAIN_PRIVATE_KEY
+#   -> agent_key.ini が出来る（gitignore 済み。絶対に共有しない。発注・取消のみ可、出金不可）
+
+# 2. REST の読み取りパス / フィールド名を確認
+python scripts/probe.py --config config.yaml
+
+# 3. testnet で最小サイズの発注・取消が通るか確認し、config.yaml の popdex: 以下の
+#    VERIFY 項目（enum 値・小数桁・cancelOrder ABI）を確定させる
+
+# 4. 本番
+#    exchange.name: popdex / popdex.network: mainnet / dry_run: false
+python run.py
+```
 
 ## 本番前に必ずやること
 
-1. `mmbot/exchange/popdex.py` の `TODO` を PopDEX の docs (popdex.xyz/docs) に合わせて実装する
-   - 認証方式（API キー HMAC か、ウォレット署名か）
-   - 板・Funding・注文・キャンセル・約定履歴・ポジション・口座残高の各エンドポイント
-   - `post_only` / `reduce_only` フラグの名称
+1. `docs/popdex-api-notes.md` の「要確認」項目を testnet で確定する（enum 値、price/qty の桁、
+   `cancelOrder` の ABI、REST パス）。本番口座に対して未確認のまま流さない
 2. `market.tick_size` / `lot_size` / `min_notional_usd` を実際の銘柄仕様に合わせる
 3. `exchange.maker_fee_bps` / `taker_fee_bps` を自分の VIP ティアの値にする
 4. 小さいサイズ（`order_notional_min/max_usd` を 10〜30）で数日回し、`logs/` を確認してから拡大する
+5. レート制限: RPC 1,200 重み/分、未約定注文 500 件/口座、nonce はミリ秒で単調増加（アダプタが保証）
 
 ## 設計メモ
 

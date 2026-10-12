@@ -22,11 +22,24 @@ def build(cfg, offline: bool):
         ex = PaperExchange(feed.price, cfg.exchange.maker_fee_bps, cfg.exchange.taker_fee_bps,
                            cfg.risk.account_equity_usd)
     elif cfg.exchange.name == "popdex":
-        from mmbot.exchange.popdex import PopdexExchange
-        e = cfg.exchange
-        ex = PopdexExchange(e.rest_url, e.api_key or os.getenv("POPDEX_API_KEY", ""),
-                            e.api_secret or os.getenv("POPDEX_API_SECRET", ""),
-                            e.private_key or os.getenv("POPDEX_PRIVATE_KEY", ""), e.ws_url)
+        from mmbot.exchange.popdex import PopdexExchange, PopdexParams
+        p, e = cfg.popdex, cfg.exchange
+        key = p.agent_private_key or os.getenv("POPDEX_AGENT_PRIVATE_KEY", "")
+        main_addr = p.main_address
+        if not key and os.path.exists(p.agent_key_file):
+            import configparser
+            ini = configparser.ConfigParser(); ini.read(p.agent_key_file)
+            key = ini["DEFAULT"].get("agent_private_key", "")
+            main_addr = main_addr or ini["DEFAULT"].get("main_address", "")
+            if ini["DEFAULT"].get("network", p.network) != p.network:
+                raise SystemExit(f"{p.agent_key_file} is for {ini['DEFAULT'].get('network')}, config says {p.network}")
+        params = PopdexParams(main_address=main_addr, agent_private_key=key, network=p.network,
+                              symbol_id=p.symbol_id, price_decimals=p.price_decimals,
+                              qty_decimals=p.qty_decimals, enum_limit=p.enum_limit,
+                              enum_market=p.enum_market, enum_buy=p.enum_buy, enum_sell=p.enum_sell,
+                              enum_post_only=p.enum_post_only, enum_ioc=p.enum_ioc, enum_gtc=p.enum_gtc,
+                              cancel_abi=p.cancel_abi, gas_limit=p.gas_limit, rest_paths=p.rest_paths)
+        ex = PopdexExchange(params, cfg.market.symbol, e.rest_url, e.rpc_url, e.ws_url)
     else:
         raise SystemExit(f"unknown exchange {cfg.exchange.name}")
     return Engine(cfg, ex, feed)

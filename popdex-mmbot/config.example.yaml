@@ -1,5 +1,5 @@
-# Copy to config.yaml and edit. Secrets can also come from env:
-#   POPDEX_API_KEY / POPDEX_API_SECRET / POPDEX_PRIVATE_KEY
+# Copy to config.yaml and edit. The agent key is read from agent_key.ini
+# (written by scripts/approve_agent.py) or env POPDEX_AGENT_PRIVATE_KEY.
 dry_run: true            # true = paper exchange, no real orders
 log_dir: logs
 
@@ -48,10 +48,25 @@ risk:
 
 exchange:
   name: paper               # paper | popdex
-  rest_url: https://api.popdex.ai
+  rest_url: ""              # leave empty to use the popdex.network default
+  rpc_url: ""
   ws_url: ""
-  api_key: ""
-  api_secret: ""
-  private_key: ""
   maker_fee_bps: -1.0       # negative = rebate; set from your VIP tier
   taker_fee_bps: 4.0
+
+popdex:
+  network: mainnet          # use testnet first (separate agent key!)
+  main_address: ""          # 0x... main wallet; blank = taken from agent_key.ini
+  agent_key_file: agent_key.ini
+  symbol_id: null           # auto-resolved; set manually if instruments lookup fails
+  # --- VERIFY on testnet before mainnet (see docs/popdex-api-notes.md) ---
+  price_decimals: 18
+  qty_decimals: 18
+  enum_limit: 0
+  enum_market: 1
+  enum_buy: 0
+  enum_sell: 1
+  enum_post_only: 1
+  enum_ioc: 2
+  enum_gtc: 0
+  cancel_abi: "cancelOrder(address main,uint16 symbolId,bytes32 clientOrderId)"

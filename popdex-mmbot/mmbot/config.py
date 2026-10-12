@@ -62,17 +62,47 @@ class RiskCfg:
 @dataclass
 class ExchangeCfg:
     name: str = "paper"                 # paper | popdex
-    rest_url: str = "https://api.popdex.ai"
+    rest_url: str = ""                  # override; default per popdex.network
+    rpc_url: str = ""
     ws_url: str = ""
-    api_key: str = ""
-    api_secret: str = ""
-    private_key: str = ""               # for wallet-signed orders, if PopDEX requires
     maker_fee_bps: float = -1.0         # negative = rebate
     taker_fee_bps: float = 4.0
 
 
 @dataclass
+class PopdexCfg:
+    """On-chain / wire-format settings; see docs/popdex-api-notes.md."""
+    network: str = "mainnet"            # mainnet | testnet
+    main_address: str = ""              # main wallet (delegator)
+    agent_private_key: str = ""         # or env POPDEX_AGENT_PRIVATE_KEY / agent_key.ini
+    agent_key_file: str = "agent_key.ini"
+    symbol_id: int | None = None        # auto-resolved from instruments when None
+    price_decimals: int = 18            # VERIFY on testnet
+    qty_decimals: int = 18              # VERIFY
+    enum_limit: int = 0                 # VERIFY orderType values
+    enum_market: int = 1
+    enum_buy: int = 0                   # VERIFY side values
+    enum_sell: int = 1
+    enum_post_only: int = 1             # VERIFY timeInForce values
+    enum_ioc: int = 2
+    enum_gtc: int = 0
+    cancel_abi: str = "cancelOrder(address main,uint16 symbolId,bytes32 clientOrderId)"  # VERIFY
+    gas_limit: int = 2_000_000
+    rest_paths: dict = field(default_factory=lambda: {
+        "instruments": "/api/v1/public/market/instruments",
+        "orderbook": "/api/v1/public/market/orderbook",
+        "tickers": "/api/v1/public/market/tickers",
+        "funding": "/api/v1/public/market/funding",
+        "open_orders": "/api/v1/account/{addr}/orders",
+        "positions": "/api/v1/account/{addr}/positions",
+        "balance": "/api/v1/account/{addr}/balance",
+        "agents": "/api/v1/account/{addr}/agents",
+    })
+
+
+@dataclass
 class Config:
+    popdex: PopdexCfg = field(default_factory=PopdexCfg)
     market: MarketCfg = field(default_factory=MarketCfg)
     quote: QuoteCfg = field(default_factory=QuoteCfg)
     human: HumanCfg = field(default_factory=HumanCfg)
@@ -96,8 +126,10 @@ def _merge(dc, data: dict):
 def load_config(path: str | Path) -> Config:
     raw = yaml.safe_load(Path(path).read_text()) or {}
     cfg = Config()
-    for section in ("market", "quote", "human", "risk", "exchange"):
+    for section in ("market", "quote", "human", "risk", "exchange", "popdex"):
         _merge(getattr(cfg, section), raw.get(section, {}))
+    if "rest_paths" in raw.get("popdex", {}):
+        cfg.popdex.rest_paths = {**PopdexCfg().rest_paths, **raw["popdex"]["rest_paths"]}
     cfg.log_dir = raw.get("log_dir", cfg.log_dir)
     cfg.dry_run = bool(raw.get("dry_run", cfg.dry_run))
     if not cfg.dry_run and cfg.exchange.name == "paper":

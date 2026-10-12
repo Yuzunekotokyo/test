@@ -2,3 +2,5 @@ logs/
 config.yaml
 __pycache__/
 .pytest_cache/
+agent_key.ini
+*.ini
